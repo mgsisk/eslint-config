@@ -1,0 +1,5 @@
+.editorconfig
+.markdownlint.json
+Brewfile
+issue_template.md
+pull_request_template.md
