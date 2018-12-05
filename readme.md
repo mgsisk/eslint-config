@@ -38,7 +38,7 @@ module.exports = {
 
 ## Support
 
-Several [support] options are available.
+[Support] resources are available.
 
 [support]: https://github.com/mgsisk/eslint-config/blob/master/support.md
 
