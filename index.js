@@ -1,3 +1,8 @@
+/**
+ * ESLint configuration for general development.
+ *
+ * @type {Object}
+ */
 module.exports = {
   parserOptions: {
     ecmaVersion: 10,
@@ -14,9 +19,7 @@ module.exports = {
   plugins: ['eslint-comments', 'import', 'jsdoc', 'sonarjs'],
   extends: ['eslint:recommended'],
   rules: {
-
     // ----- Possible Errors ---------------------------------------------------
-
     'no-async-promise-executor': 'error',
     'no-await-in-loop': 'error',
     'no-extra-parens': 'error',
@@ -27,7 +30,6 @@ module.exports = {
     'valid-jsdoc': ['error', {requireReturnDescription: false}],
 
     // ----- Best Practices ----------------------------------------------------
-
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
@@ -94,7 +96,6 @@ module.exports = {
     yoda: 'error',
 
     // ----- Variables ---------------------------------------------------------
-
     'init-declarations': ['error', 'always'],
     'no-label-var': 'error',
     'no-shadow': 'error',
@@ -104,7 +105,6 @@ module.exports = {
     'no-use-before-define': ['error', 'nofunc'],
 
     // ----- Node.js and CommonJS ----------------------------------------------
-
     'callback-return': 'error',
     'handle-callback-err': 'error',
     'no-buffer-constructor': 'error',
@@ -116,7 +116,6 @@ module.exports = {
     'no-sync': 'error',
 
     // ----- Stylistic Issues --------------------------------------------------
-
     'array-bracket-newline': ['error', 'consistent'],
     'array-bracket-spacing': 'error', // Test
     'array-element-newline': ['error', 'consistent'],
@@ -257,7 +256,6 @@ module.exports = {
     'wrap-regex': 'error',
 
     // ----- ECMAScript 6 ------------------------------------------------------
-
     'arrow-body-style': 'error',
     'arrow-parens': ['error', 'as-needed', {requireForBlockBody: true}],
     'arrow-spacing': [
@@ -288,7 +286,6 @@ module.exports = {
     'yield-star-spacing': 'error',
 
     // ----- Plugins -----------------------------------------------------------
-
     'eslint-comments/no-duplicate-disable': 'error',
     'eslint-comments/no-unlimited-disable': 'error',
     'eslint-comments/no-unused-disable': 'error',
