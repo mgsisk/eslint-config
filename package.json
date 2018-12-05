@@ -1,0 +1,56 @@
+{
+  "name": "@mgsisk/eslint-config",
+  "version": "0.1.0",
+  "description": "Opinionated ESLint configurations for JavaScript development.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "find . -name '*.DS_Store' -type f -delete",
+    "postversion": "git push --follow-tags",
+    "fix": "npm run fix.js.standard & npm run fix.js.wordpress",
+    "fix.js": "echo '> Running fix.js.standard' && npm run fix.js.standard",
+		"fix.js.standard": "eslint --fix -c index.js index.js",
+		"fix.js.wordpress": "eslint --fix -c wordpress.js wordpress.js",
+    "test": "npm run test.js.standard & npm run test.js.wordpress",
+    "test.js": "echo '> Running test.js.standard' && npm run test.js.standard",
+    "test.js.standard": "eslint -c index.js index.js",
+    "test.js.wordpress": "eslint -c wordpress.js wordpress.js",
+    "test.json": "find . -name '*.json' ! -path '*/node_modules/*' | xargs -L1 jsonlint -q",
+    "test.md": "markdownlint ./**/*.md -i node_modules/ code_of_conduct.md license.md",
+    "test.write": "find . -name '*.md' ! -path '*/node_modules/*' ! -name 'license.md' ! -name 'code_of_conduct.md' | xargs -L1 write-good"
+  },
+  "repository": "github:mgsisk/eslint-config",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-wordpress",
+    "javascript",
+    "lint",
+    "linter",
+    "linting",
+    "wordpress"
+  ],
+  "author": "mgsisk <me@mgsisk.com> (https://mgsisk.com)",
+  "license": "ISC",
+  "bugs": {
+    "email": "help@mgsisk.com",
+    "url": "https://github.com/mgsisk/eslint-config/issues"
+  },
+  "homepage": "https://github.com/mgsisk/eslint-config#readme",
+  "dependencies": {
+    "eslint-config-wordpress": "^2.0.0",
+    "eslint-plugin-eslint-comments": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsdoc": "^3.9.1",
+    "eslint-plugin-sonarjs": "^0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "jsonlint": "^1.6.3",
+    "markdownlint-cli": "^0.13.0",
+    "write-good": "^0.13.1"
+  },
+  "peerDependencies": {
+    "eslint": ">= 5.9.0"
+  }
+}
