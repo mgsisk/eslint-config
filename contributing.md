@@ -44,8 +44,8 @@ Before submitting a pull request you should:
 2. Add tests to cover all changes.
 3. Verify that all new and existing tests pass.
 
-[conduct-it]: https://github.com/mgsisk/esling-config/blob/master/code_of_conduct.md
-[submit-it]: https://github.com/mgsisk/esling-config/issues/new
+[conduct-it]: https://github.com/mgsisk/eslint-config/blob/master/code_of_conduct.md
+[submit-it]: https://github.com/mgsisk/eslint-config/issues/new
 [issues]: https://github.com/mgsisk/eslint-config/issues
 [fork-it]: https://help.github.com/articles/fork-a-repo
 [clone-it]: https://help.github.com/articles/cloning-a-repository
