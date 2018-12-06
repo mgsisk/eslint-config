@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "find . -name '*.DS_Store' -type f -delete",
     "postversion": "git push --follow-tags",
+    "preversion": "npm test",
     "fix": "npm run fix.js",
     "fix.js": "eslint --fix -c index.js '*.js'",
     "test": "npm run test.js",
