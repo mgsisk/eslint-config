@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.4.2] (2018-12-06)
+
+### Fixed
+- Installation instructions in readme
+
+## [0.4.1] (2018-12-06)
+
+### Added
+- preversion script to run tests prior to version bump
+
+### Changed
+- postversion script now publishes to npm on version bump
+
+### Fixed
+- eslint scripts
+- broken URL's in repo documentation
+
 ## [0.4.0] (2018-12-06)
 
 ## Added
@@ -40,6 +57,8 @@
 - Standard ESLint configuration
 - WordPress ESlint configuration
 
+[0.4.2]: https://github.com/mgsisk/eslint-config/compare/v0.4.1...v0.4.2
+[0.4.1]: https://github.com/mgsisk/eslint-config/compare/v0.4.0...v0.4.1
 [0.4.0]: https://github.com/mgsisk/eslint-config/compare/v0.3.1...v0.4.0
 [0.3.1]: https://github.com/mgsisk/eslint-config/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/mgsisk/eslint-config/compare/v0.2.0...v0.3.0
