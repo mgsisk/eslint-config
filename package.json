@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "clean": "find . -name '*.DS_Store' -type f -delete",
-    "postversion": "git push --follow-tags",
     "preversion": "npm test",
+    "postversion": "git push --follow-tags && npm publish",
     "fix": "npm run fix.js",
     "fix.js": "eslint --fix -c index.js '*.js'",
     "test": "npm run test.js",
