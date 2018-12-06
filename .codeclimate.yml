@@ -29,7 +29,11 @@ plugins:
     config:
       languages:
         - javascript:
+  editorconfig:
+    enabled: true
   fixme:
+    enabled: true
+  git-legal:
     enabled: true
   nodesecurity:
     enabled: true
