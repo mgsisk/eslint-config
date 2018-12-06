@@ -20,7 +20,7 @@ for JavaScript development.
 ## Installation
 
 ```sh
-npm install --dev @mgsisk/eslint-config
+npm install --save-dev @mgsisk/eslint-config
 ```
 
 ## Usage
