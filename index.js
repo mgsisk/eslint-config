@@ -231,7 +231,7 @@ module.exports = {
     ],
     'prefer-object-spread': 'error',
     'quote-props': ['error', 'as-needed'],
-    quotes: ['error', 'single'],
+    quotes: ['error', 'single', {avoidEscape: true, allowTemplateLiterals: true}],
     'require-jsdoc': [
       'error', {
         require: {
