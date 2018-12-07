@@ -30,7 +30,7 @@ npm install --save-dev @mgsisk/eslint-config
 
 module.exports = {
   …
-  extends: [ '@mgsisk' ], // Same as @mgsisk/eslint-config
+  extends: ['@mgsisk/eslint-config'],
   …
 }
 ```
