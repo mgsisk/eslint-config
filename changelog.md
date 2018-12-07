@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.5.0] (2018-12-06)
+
+### Added
+- Same-line exception for `object-property-newline`
+
 ## [0.4.2] (2018-12-06)
 
 ### Fixed
@@ -8,7 +13,7 @@
 ## [0.4.1] (2018-12-06)
 
 ### Added
-- preversion script to run tests prior to version bump
+- preversion script to run tests before version bump
 
 ### Changed
 - postversion script now publishes to npm on version bump
@@ -57,6 +62,7 @@
 - Standard ESLint configuration
 - WordPress ESlint configuration
 
+[0.5.0]: https://github.com/mgsisk/eslint-config/compare/v0.4.2...v0.5.0
 [0.4.2]: https://github.com/mgsisk/eslint-config/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/mgsisk/eslint-config/compare/v0.4.0...v0.4.1
 [0.4.0]: https://github.com/mgsisk/eslint-config/compare/v0.3.1...v0.4.0
