@@ -16,6 +16,7 @@
     "test.md": "markdownlint ./**/*.md -i node_modules/ code_of_conduct.md license.md",
     "test.write": "find . -name '*.md' ! -path '*/node_modules/*' ! -name 'license.md' ! -name 'code_of_conduct.md' | xargs -L1 write-good",
     "test.yml": "find . -name '*.yml' ! -path '*/node_modules/*' | xargs -L1 js-yaml"
+    "postversion": "git push --follow-tags",
   },
   "repository": "github:mgsisk/eslint-config",
   "keywords": [

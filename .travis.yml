@@ -1,11 +1,30 @@
 language: node_js
 
 node_js:
-  - 'node'
-  - 'lts/*'
+  - node
+  - lts/*
 
 matrix:
   fast_finish: true
 
 install:
   - npm install
+  - mkdir tmp
+  - export PATH=$PATH:$(pwd)/tmp
+
+before_script:
+  - wget -O tmp/cc-test-reporter https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+  - chmod +x tmp/cc-test-reporter
+  - cc-test-reporter before-build
+
+after_script:
+  - cc-test-reporter after-build -t lcov --exit-code $TRAVIS_TEST_RESULT
+
+deploy:
+  provider: npm
+  email: me@mgsisk.com
+  api_key:
+    secure: WJYB8qCzhp1hOZK0LwpWzdG6Qd7CPQnHAQi5doQ2Hryy5aTdQCbdF1M5vqQZZXx91/2TEC3log54jTI5sk7+cj53y0Z4TYIqR2h0BavGJDuyhkqXH9czjzVNfmQ8xjeuoKD8AoBXz/qH8xsqnrg+0p1OnDsRpQWBfJ7TL6xr+qax9e0Bn0Q26YChu/YqiRHCU6up1Ud7s9wIS7mMlR2i0VY1DvF5exFMbHuhgUq3hNf3BpQ0eBDWyK45TEn1Y2oQVVgPpL6R1lHbZV7wnSRPQqHr3RKOQL3whjHOZWBEbbUTBK6OnWkvaUUBOpXW/5P1dj7P5SF+XltF7BPZ+g1DkzMMHpLGjc2zffDoL53rwMfiQQsPcXnaUwu7LUqz4BQjeC1Kmzrk39HaP3AeoXmGxeyhd2ype8QTfdi58b71kX77x0BdM7hl0Ysw+qrv9dKEfzooS5Q3HlYxfyOL5gi0O725VdqkRkdAvHN2Ju+vWDlpfHAC4UE7wFR4+ThiipyK/9VeYJPD+9yB9tQ09ksAcQK33vAnnzldHosMuuXdi7TDxMUtxMNs1C9ORJlDs8Kr+sp4iwgJoEiZ5RDhY+hBTUU5P5d+c63tJygId5llmCvsKcdlw2mqEJyDayvl9H/JVWC0PUHW9SW+rrsMu2CB87kF766M10nzqWQP3E2DUSw=
+  on:
+    repo: mgsisk/eslint-config
+    tags: true
