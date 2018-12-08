@@ -1,6 +1,5 @@
 .codeclimate.yml
 .editorconfig
-.markdownlint.json
 .travis.yml
 Brewfile
 issue_template.md
