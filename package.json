@@ -46,8 +46,7 @@
     "js-yaml": "^3.12.0",
     "jsonlint": "^1.6.3",
     "remark-cli": "^6.0.1",
-    "tap": "^12.1.0",
-    "write-good": "^0.13.1"
+    "tap": "^12.1.0"
   },
   "peerDependencies": {
     "eslint": ">= 5.9.0"
