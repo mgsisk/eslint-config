@@ -3,6 +3,7 @@
 [![Version 0.6.1][img-version]][url-version]
 [![Build status][img-build]][url-build]
 [![Maintainability grade][img-maintainability]][url-maintainability]
+[![Test coverage][img-coverage]][url-coverage]
 [![Support development][img-support]][url-support]
 
 > Opinionated ESLint configurations for JavaScript development.
@@ -50,9 +51,11 @@ module.exports = {
 [img-version]: https://img.shields.io/npm/v/@mgsisk/eslint-config.svg?logo=npm
 [img-build]: https://img.shields.io/travis/mgsisk/eslint-config.svg?logo=travis
 [img-maintainability]: https://api.codeclimate.com/v1/badges/fc87f09ce8d5e0c3cf8d/maintainability
+[img-coverage]: https://api.codeclimate.com/v1/badges/fc87f09ce8d5e0c3cf8d/test_coverage
 [img-support]: https://img.shields.io/badge/donate-coffee-darkorange.svg?logo=gratipay&logoColor=fff
 
 [url-version]: https://npmjs.com/package/@mgsisk/eslint-config
 [url-build]: https://travis-ci.org/mgsisk/eslint-config
 [url-maintainability]: https://codeclimate.com/github/mgsisk/eslint-config/maintainability
+[url-coverage]: https://codeclimate.com/github/mgsisk/eslint-config/test_coverage
 [url-support]: https://buymeacoffee.com/mgsisk
