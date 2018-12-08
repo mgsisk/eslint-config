@@ -23,7 +23,7 @@
      the bug in -->
 <!-- For enhancements, delete this section -->
 
-- @mgsisk/eslint-config <!-- The version of @mgsisk/eslint-config you're using -->
-- ESLint <!-- The version of ESLint you're using -->
-- NPM <!-- The version of NPM you're using -->
-- Node <!-- The version of Node you're using -->
+- @mgsisk/eslint-config <!-- version(s) -->
+- ESLint <!-- version(s) -->
+- NPM <!-- version(s) -->
+- Node <!-- version(s) -->

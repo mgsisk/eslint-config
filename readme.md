@@ -7,12 +7,12 @@
 
 > Opinionated ESLint configurations for JavaScript development.
 
-The @mgsisk/eslint-config package includes opinionated [ESLint] configurations
+The @mgsisk/eslint-config package includes opinionated [ESLint][] configurations
 for JavaScript development.
 
 - `@mgsisk/eslint-config` – Standard configuration for general development.
 - `@mgsisk/eslint-config-wordpress` – Customized version of
-  [eslint-config-wordpress] for WordPress plugin and theme development.
+  [eslint-config-wordpress][] for WordPress plugin and theme development.
 
 [ESLint]: https://eslint.org
 [eslint-config-wordpress]: https://github.com/WordPress-Coding-Standards/eslint-config-wordpress
@@ -37,13 +37,13 @@ module.exports = {
 
 ## Support
 
-[Support] resources are available.
+[Support][] resources are available.
 
 [support]: https://github.com/mgsisk/eslint-config/blob/master/support.md
 
 ## Contribute
 
-[Contributions] are always welcome.
+[Contributions][] are always welcome.
 
 [Contributions]: https://github.com/mgsisk/eslint-config/blob/master/contributing.md
 

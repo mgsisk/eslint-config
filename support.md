@@ -21,7 +21,7 @@ milestones to help drive development.
 [img-issues]: https://img.shields.io/github/issues/mgsisk/eslint-config.svg?logo=github&logoColor=white
 [url-issues]: https://github.com/mgsisk/eslint-config/issues
 
-## [Contact Mike]
+## [Contact Mike][]
 
 If all else fails, you can try contacting Mike directly. A response isn't
 guaranteed, but Mike does his best to answer questions as he can.
