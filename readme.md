@@ -1,6 +1,6 @@
 # @mgsisk/eslint-config
 
-[![Version 0.1.0][img-version]][url-version]
+[![Version 0.6.1][img-version]][url-version]
 [![Build status][img-build]][url-build]
 [![Maintainability grade][img-maintainability]][url-maintainability]
 [![Support development][img-support]][url-support]
