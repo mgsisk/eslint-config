@@ -2,8 +2,12 @@
 
 ## [0.6.1][] (2018-12-07)
 
+### Added
+- Tests with code coverage
+
 ### Changed
 - Moved npm deployment to Travis configuration
+- Replaced markdownlint-cli with remark-lint
 
 ## [0.6.0][] (2018-12-07)
 
