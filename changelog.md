@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.2][] (2018-12-09)
+
+### Changed
+- Replaced jsonlint with jsonlint-cli
+- Replaced js-yaml with yaml-lint
+
+### Fixed
+- Missing Code Climate report ID
+
 ## [0.6.1][] (2018-12-07)
 
 ### Added
@@ -79,7 +88,8 @@
 - Standard ESLint configuration
 - WordPress ESlint configuration
 
-[0.6.1]: https://github.com/mgsisk/eslint-config/compare/v0.5.1...v0.6.1
+[0.6.2]: https://github.com/mgsisk/eslint-config/compare/v0.6.1...v0.6.2
+[0.6.1]: https://github.com/mgsisk/eslint-config/compare/v0.6.0...v0.6.1
 [0.6.0]: https://github.com/mgsisk/eslint-config/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/mgsisk/eslint-config/compare/v0.4.2...v0.5.0
 [0.4.2]: https://github.com/mgsisk/eslint-config/compare/v0.4.1...v0.4.2
