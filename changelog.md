@@ -3,8 +3,8 @@
 ## [0.6.2][] (2018-12-09)
 
 ### Changed
-- Replaced jsonlint with jsonlint-cli
-- Replaced js-yaml with yaml-lint
+- Replaced `js-yaml` with `yaml-lint`
+- Replaced `jsonlint` with `jsonlint-cli`
 
 ### Fixed
 - Missing Code Climate report ID
@@ -16,7 +16,7 @@
 
 ### Changed
 - Moved npm deployment to Travis configuration
-- Replaced markdownlint-cli with remark-lint
+- Replaced `markdownlint-cli` with `remark-lint`
 
 ## [0.6.0][] (2018-12-07)
 
