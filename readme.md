@@ -12,7 +12,7 @@ The @mgsisk/eslint-config package includes opinionated [ESLint][] configurations
 for JavaScript development.
 
 - `@mgsisk/eslint-config` – Standard configuration for general development.
-- `@mgsisk/eslint-config-wordpress` – Customized version of
+- `@mgsisk/eslint-config/wordpress` – Customized version of
   [eslint-config-wordpress][] for WordPress plugin and theme development.
 
 [ESLint]: https://eslint.org
