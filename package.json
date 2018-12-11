@@ -11,7 +11,7 @@
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
     "preversion": "npm test",
     "postversion": "git push --follow-tags",
-    "test": "npm run lint.js && tap tests --coverage-report=lcovonly"
+    "test": "npm run lint.js; tap tests --coverage-report=lcovonly"
   },
   "repository": "github:mgsisk/eslint-config",
   "keywords": [
@@ -27,10 +27,7 @@
   ],
   "author": "mgsisk <me@mgsisk.com> (https://mgsisk.com)",
   "license": "ISC",
-  "bugs": {
-    "email": "help@mgsisk.com",
-    "url": "https://github.com/mgsisk/eslint-config/issues"
-  },
+  "bugs": "https://github.com/mgsisk/eslint-config/issues",
   "homepage": "https://github.com/mgsisk/eslint-config",
   "dependencies": {
     "eslint-config-wordpress": "^2.0.0",
