@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.7.0][] (2019-02-26)
+
+### Added
+- jsdoc/check-examples rule
+- jsdoc/require-returns-check rule
+- jsdoc/require-returns rule
+
+### Changed
+- Replaced `jsonlint-cli` with `jsonlint`
+- Updated eslint plugin dependencies.
+
 ## [0.6.2][] (2018-12-09)
 
 ### Changed
@@ -88,6 +99,7 @@
 - Standard ESLint configuration
 - WordPress ESlint configuration
 
+[0.7.0]: https://github.com/mgsisk/eslint-config/compare/v0.6.2...v0.7.0
 [0.6.2]: https://github.com/mgsisk/eslint-config/compare/v0.6.1...v0.6.2
 [0.6.1]: https://github.com/mgsisk/eslint-config/compare/v0.6.0...v0.6.1
 [0.6.0]: https://github.com/mgsisk/eslint-config/compare/v0.5.0...v0.6.0
