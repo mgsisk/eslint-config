@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "find . -name '*.DS_Store' -type f -delete",
     "lint.js": "eslint -c index.js '**/*.js' '**/.*.js'",
-    "lint.json": "jsonlint-cli '**/*.json' '**/.*.json'",
+    "lint.json": "find . \\( -name '*.json' -o -name '.*.json' \\) ! -path '*/node_modules/*' ! -path '*/vendor/*' ! -path '*/.nyc_output/*' | xargs -L1 jsonlint -q",
     "lint.md": "remark .",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
     "preversion": "npm test",
