@@ -1,6 +1,6 @@
 {
   "name": "@mgsisk/eslint-config",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "Opinionated ESLint configurations for JavaScript development.",
   "main": "index.js",
   "scripts": {
