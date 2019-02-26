@@ -11,7 +11,7 @@
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
     "preversion": "npm test",
     "postversion": "git push --follow-tags",
-    "test": "npm run lint.js; tap tests --coverage-report=lcovonly"
+    "test": "tap tests --coverage-report=lcovonly"
   },
   "repository": "github:mgsisk/eslint-config",
   "keywords": [
@@ -31,17 +31,17 @@
   "homepage": "https://github.com/mgsisk/eslint-config",
   "dependencies": {
     "eslint-config-wordpress": "^2.0.0",
-    "eslint-plugin-eslint-comments": "^3.0.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsdoc": "^3.9.1",
-    "eslint-plugin-sonarjs": "^0.2.0"
+    "eslint-plugin-eslint-comments": "^3.1.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsdoc": "^4.1.1",
+    "eslint-plugin-sonarjs": "^0.3.0"
   },
   "devDependencies": {
-    "@mgsisk/remark-lint-config": "^0.1.1",
-    "eslint": "^5.9.0",
-    "jsonlint-cli": "^1.0.1",
+    "@mgsisk/remark-lint-config": "^0.1.2",
+    "eslint": "^5.14.1",
+    "jsonlint": "^1.6.3",
     "remark-cli": "^6.0.1",
-    "tap": "^12.1.0",
+    "tap": "^12.5.3",
     "yaml-lint": "^1.2.4"
   },
   "peerDependencies": {
