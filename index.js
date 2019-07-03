@@ -24,11 +24,7 @@ module.exports = {
     'no-await-in-loop': 'error',
     'no-console': 'error',
     'no-extra-parens': 'error',
-    'no-misleading-character-class': 'error',
-    'no-prototype-builtins': 'error',
     'no-template-curly-in-string': 'error',
-    'require-atomic-updates': 'error',
-    'valid-jsdoc': ['error', {requireReturnDescription: false}],
 
     // ----- Best Practices ----------------------------------------------------
     'accessor-pairs': 'error',
@@ -87,7 +83,6 @@ module.exports = {
     'no-useless-return': 'error',
     'no-void': 'error',
     'no-warning-comments': 'error',
-    'no-with': 'error',
     'prefer-promise-reject-errors': 'error',
     radix: ['error', 'as-needed'],
     'require-await': 'error',
@@ -100,7 +95,6 @@ module.exports = {
     'init-declarations': ['error', 'always'],
     'no-label-var': 'error',
     'no-shadow': 'error',
-    'no-shadow-restricted-names': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'error',
     'no-use-before-define': ['error', 'nofunc'],
