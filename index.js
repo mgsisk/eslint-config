@@ -328,6 +328,7 @@ module.exports = {
     'jsdoc/no-undefined-types': 'error',
     'jsdoc/require-description': 'error',
     'jsdoc/require-description-complete-sentence': 'error',
+    'jsdoc/require-jsdoc': 'error',
     'jsdoc/require-param': 'error',
     'jsdoc/require-param-description': 'error',
     'jsdoc/require-param-name': 'error',
