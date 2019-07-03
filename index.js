@@ -1,7 +1,7 @@
 /**
  * ESLint configuration for general development.
  *
- * @type {Object}
+ * @type {object}
  */
 module.exports = {
   parserOptions: {
@@ -22,6 +22,7 @@ module.exports = {
     // ----- Possible Errors ---------------------------------------------------
     'no-async-promise-executor': 'error',
     'no-await-in-loop': 'error',
+    'no-console': 'error',
     'no-extra-parens': 'error',
     'no-misleading-character-class': 'error',
     'no-prototype-builtins': 'error',
