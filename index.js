@@ -318,6 +318,7 @@ module.exports = {
     'import/group-exports': 'error',
     'jsdoc/check-alignment': 'error',
     'jsdoc/check-examples': 'error',
+    'jsdoc/check-indentation': 'error',
     'jsdoc/check-param-names': 'error',
     'jsdoc/check-tag-names': 'error',
     'jsdoc/check-types': 'error',
