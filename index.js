@@ -320,6 +320,7 @@ module.exports = {
     'jsdoc/check-examples': 'error',
     'jsdoc/check-indentation': 'error',
     'jsdoc/check-param-names': 'error',
+    'jsdoc/check-syntax': 'error',
     'jsdoc/check-tag-names': 'error',
     'jsdoc/check-types': 'error',
     'jsdoc/newline-after-description': 'error',
