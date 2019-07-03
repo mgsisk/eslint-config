@@ -346,6 +346,7 @@ module.exports = {
     'sonarjs/no-use-of-empty-return-value': 'error',
     'sonarjs/cognitive-complexity': ['error', 16],
     'sonarjs/max-switch-cases': ['error', 8],
+    'sonarjs/no-collapsible-if': 'error',
     'sonarjs/no-duplicate-string': 'error',
     'sonarjs/no-duplicated-branches': 'error',
     'sonarjs/no-identical-functions': 'error',
