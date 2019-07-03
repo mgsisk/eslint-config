@@ -326,7 +326,6 @@ module.exports = {
     'jsdoc/implements-on-classes': 'error',
     'jsdoc/newline-after-description': 'error',
     'jsdoc/no-undefined-types': 'error',
-    'jsdoc/require-description': 'error',
     'jsdoc/require-description-complete-sentence': 'error',
     'jsdoc/require-jsdoc': 'error',
     'jsdoc/require-param': 'error',
