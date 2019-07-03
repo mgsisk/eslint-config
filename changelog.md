@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.8.0][] (2019-07-30)
+
+### Added
+- no-console rule
+- jsdoc/check-alignment rule
+- jsdoc/check-indentation rule
+- jsdoc/check-syntax rule
+- jsdoc/implements-no-classes rule
+- jsdoc/require-description rule
+- jsdoc/require-jsdoc rule
+- sonarjs/no-one-iteration-loop rule
+- sonarjs/no-collapsible-if rule
+
+### Changed
+- Replaced `eslint-config-wordpress` with `@wordpress/eslint-plugin`
+- Updated package dependencies
+- Updated tests for new WordPress standards
+
 ## [0.7.0][] (2019-02-26)
 
 ### Added
@@ -99,6 +117,7 @@
 - Standard ESLint configuration
 - WordPress ESlint configuration
 
+[0.8.0]: https://github.com/mgsisk/eslint-config/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/mgsisk/eslint-config/compare/v0.6.2...v0.7.0
 [0.6.2]: https://github.com/mgsisk/eslint-config/compare/v0.6.1...v0.6.2
 [0.6.1]: https://github.com/mgsisk/eslint-config/compare/v0.6.0...v0.6.1
