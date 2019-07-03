@@ -316,6 +316,7 @@ module.exports = {
     'import/no-named-default': 'error',
     'import/no-anonymous-default-export': 'error',
     'import/group-exports': 'error',
+    'jsdoc/check-alignment': 'error',
     'jsdoc/check-examples': 'error',
     'jsdoc/check-param-names': 'error',
     'jsdoc/check-tag-names': 'error',
