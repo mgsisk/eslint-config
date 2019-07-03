@@ -323,6 +323,7 @@ module.exports = {
     'jsdoc/check-syntax': 'error',
     'jsdoc/check-tag-names': 'error',
     'jsdoc/check-types': 'error',
+    'jsdoc/implements-on-classes': 'error',
     'jsdoc/newline-after-description': 'error',
     'jsdoc/no-undefined-types': 'error',
     'jsdoc/require-description-complete-sentence': 'error',
