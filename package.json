@@ -30,21 +30,21 @@
   "bugs": "https://github.com/mgsisk/eslint-config/issues",
   "homepage": "https://github.com/mgsisk/eslint-config",
   "dependencies": {
-    "eslint-config-wordpress": "^2.0.0",
-    "eslint-plugin-eslint-comments": "^3.1.1",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsdoc": "^4.1.1",
-    "eslint-plugin-sonarjs": "^0.3.0"
+    "@wordpress/eslint-plugin": "^2.3.0",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsdoc": "^10.0.3",
+    "eslint-plugin-sonarjs": "^0.4.0"
   },
   "devDependencies": {
-    "@mgsisk/remark-lint-config": "^0.1.2",
-    "eslint": "^5.15.1",
+    "@mgsisk/remark-lint-config": "^0.2.0",
+    "eslint": "^6.0.1",
     "jsonlint": "^1.6.3",
     "remark-cli": "^6.0.1",
-    "tap": "^12.6.0",
+    "tap": "^14.4.0",
     "yaml-lint": "^1.2.4"
   },
   "peerDependencies": {
-    "eslint": ">= 5.9.0"
+    "eslint": ">= 6"
   }
 }
