@@ -122,7 +122,7 @@
 - Standard ESLint configuration
 - WordPress ESlint configuration
 
-[0.8.0]: https://github.com/mgsisk/eslint-config/compare/v0.8.0...v0.8.1
+[0.8.1]: https://github.com/mgsisk/eslint-config/compare/v0.8.0...v0.8.1
 [0.8.0]: https://github.com/mgsisk/eslint-config/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/mgsisk/eslint-config/compare/v0.6.2...v0.7.0
 [0.6.2]: https://github.com/mgsisk/eslint-config/compare/v0.6.1...v0.6.2
