@@ -286,6 +286,7 @@ module.exports = {
     'import/no-cycle': 'error',
     'import/no-useless-path-segments': 'error',
     'import/no-relative-parent-imports': 'error',
+    'import/no-unused-modules': 'error',
     'import/export': 'error',
     'import/no-named-as-default': 'error',
     'import/no-named-as-default-member': 'error',
