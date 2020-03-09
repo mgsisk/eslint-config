@@ -307,6 +307,13 @@ module.exports = {
     'jsdoc/check-examples': 'error',
     'jsdoc/check-indentation': 'error',
     'jsdoc/check-syntax': 'error',
+    'jsdoc/check-property-names': 'error',
+    'jsdoc/check-values': 'error',
+    'jsdoc/empty-tags': 'error',
     'jsdoc/require-description-complete-sentence': 'error',
+    'jsdoc/require-property-description': 'error',
+    'jsdoc/require-property-name': 'error',
+    'jsdoc/require-property-type': 'error',
+    'jsdoc/require-property': 'error',
   },
 }
