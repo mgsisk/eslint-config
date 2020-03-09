@@ -5,6 +5,7 @@
 .nyc_output
 .remarkignore
 .remarkrc.js
+.taprc
 .travis.yml
 .yaml-lint.json
 Brewfile
