@@ -5,7 +5,7 @@
  */
 module.exports = {
   parserOptions: {
-    ecmaVersion: 10,
+    ecmaVersion: 11,
     ecmaFeatures: {
       globalReturn: false,
       impliedStrict: true,
