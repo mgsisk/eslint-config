@@ -1,5 +1,35 @@
 # Changelog
 
+## [Unreleased][]
+
+- `no-useless-backreference` rule
+- `default-case-last` rule
+
+## [0.9.0][] (2020-03-09)
+
+## Added
+- `default-param-last` rule
+- `function-call-argument-newline` rule
+- `grouped-accessor-pairs` rule
+- `no-constructor-return` rule
+- `prefer-exponentiation-operator` rule
+- `require-atomic-updates` rule
+- `import/no-unused-modules` rule
+- `jsdoc/check-property-names` rule
+- `jsdoc/check-values` rule
+- `jsdoc/empty-tags` rule
+- `jsdoc/require-property-description` rule
+- `jsdoc/require-property-name` rule
+- `jsdoc/require-property-type` rule
+- `jsdoc/require-property` rule
+
+### Changed
+- Using `plugin:eslint-comments/recommended`
+- Using `plugin:eslint-import/recommended`
+- Using `plugin:jsdoc/recommended`
+- Using `plugin:sonarjs/recommended`
+- `max-nested-callbacks` limit reduced to `8`
+
 ## [0.8.1][] (2019-07-30)
 
 ### Removed
@@ -122,6 +152,8 @@
 - Standard ESLint configuration
 - WordPress ESlint configuration
 
+[Unreleased]: https://github.com/mgsisk/eslint-config/compare/v0.9.0...HEAD
+[0.9.0]: https://github.com/mgsisk/eslint-config/compare/v0.8.1...v0.9.0
 [0.8.1]: https://github.com/mgsisk/eslint-config/compare/v0.8.0...v0.8.1
 [0.8.0]: https://github.com/mgsisk/eslint-config/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/mgsisk/eslint-config/compare/v0.6.2...v0.7.0
