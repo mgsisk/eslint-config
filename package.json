@@ -11,6 +11,7 @@
     "lint.js": "eslint -c index.js '**/*.js' '**/.*.js'",
     "lint.json": "cat .jsonlint | xargs -L1 jsonlint -q",
     "lint.md": "remark .",
+    "lint.sh": "cat .shellcheck | xargs -L1 shellcheck",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
     "preversion": "npm test",
     "postversion": "git push --follow-tags",
