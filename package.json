@@ -3,6 +3,10 @@
   "version": "0.9.0",
   "description": "Opinionated ESLint configurations for JavaScript development.",
   "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
   "scripts": {
     "clean": "find . -name '*.DS_Store' -type f -delete",
     "lint.js": "eslint -c index.js '**/*.js' '**/.*.js'",
