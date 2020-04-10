@@ -14,7 +14,7 @@
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
     "preversion": "npm test",
     "postversion": "git push --follow-tags",
-    "test": "tap test --coverage-report=lcovonly"
+    "test": "tap test"
   },
   "repository": "github:mgsisk/eslint-config",
   "keywords": [
