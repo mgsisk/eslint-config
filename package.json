@@ -13,7 +13,7 @@
   "scripts": {
     "lint.js": "eslint -c index.js '**/*.js' '**/.*.js'",
     "lint.json": "cat .jsonlint | xargs -L1 jsonlint -q",
-    "lint.md": "remark .",
+    "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
     "lint.sh": "cat .shellcheck | xargs -L1 shellcheck",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
     "preversion": "npm test",
