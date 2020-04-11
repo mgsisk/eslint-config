@@ -25,6 +25,6 @@ or delete this section.
 Provide any relevant context that might help here, including:
 
 - Code related to the feature
-- Environments that support the feature (e.g. node version, postcss version)
+- Environments that support the feature (e.g. node version, eslint version)
 - Links to examples of the feature
 - Screenshots demonstrating the feature
