@@ -2,16 +2,23 @@
   "name": "@mgsisk/eslint-config",
   "version": "0.9.0",
   "description": "Opinionated ESLint configurations for JavaScript development.",
+  "files": [
+    "wordpress.js"
+  ],
   "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
   "scripts": {
-    "clean": "find . -name '*.DS_Store' -type f -delete",
     "lint.js": "eslint -c index.js '**/*.js' '**/.*.js'",
-    "lint.json": "find . \\( -name '*.json' -o -name '.*.json' \\) ! -path '*/node_modules/*' ! -path '*/vendor/*' ! -path '*/.nyc_output/*' | xargs -L1 jsonlint -q",
-    "lint.md": "remark .",
+    "lint.json": "cat .jsonlint | xargs -L1 jsonlint -q",
+    "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
+    "lint.sh": "cat .shellcheck | xargs -L1 shellcheck",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
     "preversion": "npm test",
     "postversion": "git push --follow-tags",
-    "test": "tap test --coverage-report=lcovonly"
+    "test": "tap test"
   },
   "repository": "github:mgsisk/eslint-config",
   "keywords": [
@@ -30,21 +37,29 @@
   "bugs": "https://github.com/mgsisk/eslint-config/issues",
   "homepage": "https://github.com/mgsisk/eslint-config",
   "dependencies": {
-    "@wordpress/eslint-plugin": "^4.0.0",
+    "@wordpress/eslint-plugin": "^4.1.0",
     "eslint-plugin-eslint-comments": "^3.1.2",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsdoc": "^22.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsdoc": "^22.1.0",
     "eslint-plugin-sonarjs": "^0.5.0"
   },
   "devDependencies": {
     "@mgsisk/remark-lint-config": "^0.2.0",
     "eslint": "^6.8.0",
     "jsonlint": "^1.6.3",
-    "remark-cli": "^7.0.1",
-    "tap": "^14.10.6",
+    "remark-cli": "^8.0.0",
+    "shellcheck": "^0.4.2",
+    "tap": "^14.10.7",
     "yaml-lint": "^1.2.4"
   },
   "peerDependencies": {
     "eslint": ">= 6"
-  }
+  },
+  "eslintIgnore": [
+    ".git/",
+    ".nyc_output/",
+    ".vagrant/",
+    "coverage/",
+    "node_modules/"
+  ]
 }
