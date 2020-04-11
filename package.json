@@ -54,5 +54,12 @@
   },
   "peerDependencies": {
     "eslint": ">= 6"
-  }
+  },
+  "eslintIgnore": [
+    ".git/",
+    ".nyc_output/",
+    ".vagrant/",
+    "coverage/",
+    "node_modules/"
+  ]
 }
