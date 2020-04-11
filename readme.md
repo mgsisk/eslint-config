@@ -1,22 +1,19 @@
 # @mgsisk/eslint-config
 
-[![Version 0.6.1][img-version]][url-version]
-[![Build status][img-build]][url-build]
-[![Maintainability grade][img-maintainability]][url-maintainability]
-[![Test coverage][img-coverage]][url-coverage]
-[![Support development][img-support]][url-support]
+Opinionated ESLint configurations for JavaScript development.
 
-> Opinionated ESLint configurations for JavaScript development.
+![Latest release][badge-release]
+![Build status][badge-build]
+![Code maintainability][badge-maintainability]
+![Test coverage][badge-coverage]
+![Maintainer funding][badge-funding]
 
 The @mgsisk/eslint-config package includes opinionated [ESLint][] configurations
 for JavaScript development.
 
 - `@mgsisk/eslint-config` – Standard configuration for general development.
 - `@mgsisk/eslint-config/wordpress` – Customized version of
-  [eslint-config-wordpress][] for WordPress plugin and theme development.
-
-[ESLint]: https://eslint.org
-[eslint-config-wordpress]: https://github.com/WordPress-Coding-Standards/eslint-config-wordpress
+  [@wordpress/eslint-plugin][] for WordPress plugin and theme development.
 
 ## Installation
 
@@ -36,26 +33,36 @@ module.exports = {
 }
 ```
 
-## Support
+More [support resources][] are available if you need help with this project.
 
-[Support][] resources are available.
+## Contributing
 
-[support]: https://github.com/mgsisk/eslint-config/blob/master/support.md
+[Contributions][] are always welcome; please read the [code of conduct][]
+before you begin. See the [changelog][] for notable project changes, and report
+any [security][] concerns you find.
 
-## Contribute
+## Thanks
 
-[Contributions][] are always welcome.
+To the [contributors][] that help to build, fund, and maintain this project;
+the [other works][] that have contributed to and inspired this project; and
+anyone that has found this project useful.
 
-[Contributions]: https://github.com/mgsisk/eslint-config/blob/master/contributing.md
+## License
 
-[img-version]: https://img.shields.io/npm/v/@mgsisk/eslint-config.svg?logo=npm
-[img-build]: https://img.shields.io/travis/mgsisk/eslint-config.svg?logo=travis
-[img-maintainability]: https://api.codeclimate.com/v1/badges/fc87f09ce8d5e0c3cf8d/maintainability
-[img-coverage]: https://api.codeclimate.com/v1/badges/fc87f09ce8d5e0c3cf8d/test_coverage
-[img-support]: https://img.shields.io/badge/donate-coffee-darkorange.svg?logo=gratipay&logoColor=fff
+[ISC][]
 
-[url-version]: https://npmjs.com/package/@mgsisk/eslint-config
-[url-build]: https://travis-ci.org/mgsisk/eslint-config
-[url-maintainability]: https://codeclimate.com/github/mgsisk/eslint-config/maintainability
-[url-coverage]: https://codeclimate.com/github/mgsisk/eslint-config/test_coverage
-[url-support]: https://buymeacoffee.com/mgsisk
+[@wordpress/eslint-plugin]: https://www.npmjs.com/package/@wordpress/eslint-plugin
+[badge-build]: https://img.shields.io/travis/com/mgsisk/eslint-config?link=https://travis-ci.com/mgsisk/eslint-config
+[badge-coverage]: https://img.shields.io/codeclimate/coverage/mgsisk/eslint-config?link=https://codeclimate.com/github/mgsisk/eslint-config
+[badge-funding]: https://img.shields.io/liberapay/receives/mgsisk?link=https://github.com/mgsisk/eslint-config/blob/master/docs/CONTRIBUTING.md%23funding
+[badge-maintainability]: https://img.shields.io/codeclimate/maintainability/mgsisk/eslint-config?link=https://codeclimate.com/github/mgsisk/eslint-config
+[badge-release]: https://img.shields.io/github/v/tag/mgsisk/eslint-config?sort=semver&link=https://github.com/mgsisk/eslint-config/releases
+[changelog]: docs/CHANGELOG.md
+[code of conduct]: https://github.com/mgsisk/eslint-config/blob/master/docs/CODE_OF_CONDUCT.md
+[contributions]: https://github.com/mgsisk/eslint-config/blob/master/docs/CONTRIBUTING.md
+[contributors]: https://github.com/mgsisk/eslint-config/blob/master/docs/AUTHORS.md
+[eslint]: https://eslint.org
+[isc]: https://github.com/mgsisk/eslint-config/blob/master/LICENSE.md
+[other works]: https://github.com/mgsisk/eslint-config/blob/master/docs/THANKS.md
+[security]: https://github.com/mgsisk/eslint-config/blob/master/docs/SECURITY.md
+[support resources]: https://github.com/mgsisk/eslint-config/blob/master/docs/SUPPORT.md

@@ -1,6 +1,9 @@
 {
   "ignore": [
-    "node_modules/**/*.yml",
-    "node_modules/**/*.yaml"
+    ".git/",
+    ".nyc_output/",
+    ".vagrant/",
+    "coverage/",
+    "node_modules/"
   ]
 }
