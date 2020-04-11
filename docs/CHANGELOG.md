@@ -9,6 +9,8 @@ Documents notable project changes. Versions are [semantic][].
 - `no-useless-backreference` rule
 - `default-case-last` rule
 
+## [1.0.0][] - 2020-04-11
+
 ### Changed
 
 - Project structure
@@ -163,7 +165,8 @@ Documents notable project changes. Versions are [semantic][].
 - Standard ESLint configuration
 - WordPress ESlint configuration
 
-[Unreleased]: https://github.com/mgsisk/eslint-config/compare/v0.9.0...HEAD
+[Unreleased]: https://github.com/mgsisk/eslint-config/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/mgsisk/eslint-config/compare/v0.9.0...v1.0.0
 [0.9.0]: https://github.com/mgsisk/eslint-config/compare/v0.8.1...v0.9.0
 [0.8.1]: https://github.com/mgsisk/eslint-config/compare/v0.8.0...v0.8.1
 [0.8.0]: https://github.com/mgsisk/eslint-config/compare/v0.7.0...v0.8.0
