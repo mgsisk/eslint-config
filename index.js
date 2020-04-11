@@ -315,8 +315,8 @@ module.exports = {
     'import/group-exports': 'error',
     'jsdoc/check-examples': 'error',
     'jsdoc/check-indentation': 'error',
-    'jsdoc/check-syntax': 'error',
     'jsdoc/check-property-names': 'error',
+    'jsdoc/check-syntax': 'error',
     'jsdoc/check-values': 'error',
     'jsdoc/empty-tags': 'error',
     'jsdoc/require-description-complete-sentence': 'error',
@@ -324,5 +324,6 @@ module.exports = {
     'jsdoc/require-property-name': 'error',
     'jsdoc/require-property-type': 'error',
     'jsdoc/require-property': 'error',
+    'jsdoc/require-returns-description': 'off',
   },
 }
