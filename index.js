@@ -288,7 +288,6 @@ module.exports = {
     'eslint-comments/no-unused-disable': 'error',
     'import/no-absolute-path': 'error',
     'import/no-dynamic-require': 'error',
-    'import/no-internal-modules': 'error',
     'import/no-webpack-loader-syntax': 'error',
     'import/no-self-import': 'error',
     'import/no-cycle': 'error',
