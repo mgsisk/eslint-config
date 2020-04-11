@@ -26,8 +26,8 @@ references to any relevant issues (i.e. Fixes #0).
 **Verification**  
 Provide a clear and concise explanation here for any items not checked below.
 
-- [ ] I have read this projects code of conduct
-- [ ] I have read this projects contributing guidelines
-- [ ] I have followed this projects coding standards
-- [ ] I have followed this projects documentation standards
+- [ ] I have read this project's code of conduct
+- [ ] I have read this project's contributing guidelines
+- [ ] I have followed this project's coding standards
+- [ ] I have followed this project's documentation standards
 - [ ] I have added passing tests to verify changes
