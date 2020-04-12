@@ -33,7 +33,7 @@ module.exports = {
 }
 ```
 
-More [support resources][] are available if you need help with this project.
+[Support resources][] are available if you need help with this project.
 
 ## Contributing
 
