@@ -1,9 +1,0 @@
-{
-  "ignore": [
-    ".git/",
-    ".nyc_output/",
-    ".vagrant/",
-    "coverage/",
-    "node_modules/"
-  ]
-}

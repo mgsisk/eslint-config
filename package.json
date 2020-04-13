@@ -2,23 +2,17 @@
   "name": "@mgsisk/eslint-config",
   "version": "1.0.0",
   "description": "Opinionated ESLint configurations for JavaScript development.",
-  "files": [
-    "wordpress.js"
-  ],
   "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "test": "test"
-  },
   "scripts": {
     "lint.js": "eslint -c index.js '**/*.js' '**/.*.js'",
-    "lint.json": "cat .jsonlint | xargs -L1 jsonlint -q",
+    "lint.json": "printf 'package-lock.json package.json' | xargs -n1 jsonlint -q",
     "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
-    "lint.sh": "cat .shellcheck | xargs -L1 shellcheck",
+    "lint.sh": "shellcheck *.sh",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
+    "test": "tap test",
     "preversion": "npm test",
-    "postversion": "git push --follow-tags",
-    "test": "tap test"
+    "version": "git add --all",
+    "postversion": "git push --follow-tags"
   },
   "repository": "github:mgsisk/eslint-config",
   "keywords": [
@@ -36,6 +30,11 @@
   "license": "ISC",
   "bugs": "https://github.com/mgsisk/eslint-config/issues",
   "homepage": "https://github.com/mgsisk/eslint-config",
+  "files": ["wordpress.js"],
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
   "dependencies": {
     "@wordpress/eslint-plugin": "^4.1.0",
     "eslint-plugin-eslint-comments": "^3.1.2",

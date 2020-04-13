@@ -2,11 +2,11 @@
 
 Opinionated ESLint configurations for JavaScript development.
 
-![Latest release][badge-release]
-![Build status][badge-build]
-![Code maintainability][badge-maintainability]
-![Test coverage][badge-coverage]
-![Maintainer funding][badge-funding]
+[![Latest release][badge-release]][url-release]
+[![Build status][badge-build]][url-build]
+[![Code maintainability][badge-maintainability]][url-maintainability]
+[![Test coverage][badge-coverage]][url-coverage]
+[![Maintainer funding][badge-funding]][url-funding]
 
 The @mgsisk/eslint-config package includes opinionated [ESLint][] configurations
 for JavaScript development.
@@ -33,7 +33,7 @@ module.exports = {
 }
 ```
 
-More [support resources][] are available if you need help with this project.
+[Support resources][] are available if you need help with this project.
 
 ## Contributing
 
@@ -52,11 +52,11 @@ anyone that has found this project useful.
 [ISC][]
 
 [@wordpress/eslint-plugin]: https://www.npmjs.com/package/@wordpress/eslint-plugin
-[badge-build]: https://img.shields.io/travis/com/mgsisk/eslint-config?link=https://travis-ci.com/mgsisk/eslint-config
-[badge-coverage]: https://img.shields.io/codeclimate/coverage/mgsisk/eslint-config?link=https://codeclimate.com/github/mgsisk/eslint-config
-[badge-funding]: https://img.shields.io/liberapay/receives/mgsisk?link=https://github.com/mgsisk/eslint-config/blob/master/docs/CONTRIBUTING.md%23funding
-[badge-maintainability]: https://img.shields.io/codeclimate/maintainability/mgsisk/eslint-config?link=https://codeclimate.com/github/mgsisk/eslint-config
-[badge-release]: https://img.shields.io/github/v/tag/mgsisk/eslint-config?sort=semver&link=https://github.com/mgsisk/eslint-config/releases
+[badge-build]: https://img.shields.io/travis/com/mgsisk/eslint-config
+[badge-coverage]: https://img.shields.io/codeclimate/coverage/mgsisk/eslint-config
+[badge-funding]: https://img.shields.io/liberapay/receives/mgsisk
+[badge-maintainability]: https://img.shields.io/codeclimate/maintainability/mgsisk/eslint-config
+[badge-release]: https://img.shields.io/github/v/tag/mgsisk/eslint-config?sort=semver
 [changelog]: docs/CHANGELOG.md
 [code of conduct]: https://github.com/mgsisk/eslint-config/blob/master/docs/CODE_OF_CONDUCT.md
 [contributions]: https://github.com/mgsisk/eslint-config/blob/master/docs/CONTRIBUTING.md
@@ -66,3 +66,8 @@ anyone that has found this project useful.
 [other works]: https://github.com/mgsisk/eslint-config/blob/master/docs/THANKS.md
 [security]: https://github.com/mgsisk/eslint-config/blob/master/docs/SECURITY.md
 [support resources]: https://github.com/mgsisk/eslint-config/blob/master/docs/SUPPORT.md
+[url-build]: https://travis-ci.com/mgsisk/eslint-config
+[url-coverage]: https://codeclimate.com/github/mgsisk/eslint-config
+[url-funding]: https://github.com/mgsisk/eslint-config/blob/master/docs/CONTRIBUTING.md#funding
+[url-maintainability]: https://codeclimate.com/github/mgsisk/eslint-config
+[url-release]: https://github.com/mgsisk/eslint-config/releases
