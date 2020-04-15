@@ -29,7 +29,8 @@
   "author": "mgsisk <me@mgsisk.com> (https://mgsisk.com)",
   "license": "ISC",
   "bugs": "https://github.com/mgsisk/eslint-config/issues",
-  "homepage": "https://github.com/mgsisk/eslint-config",
+  "homepage": "https://github.com/mgsisk/eslint-config#readme",
+  "funding": "https://github.com/mgsisk/eslint-config?sponsor=1",
   "files": ["wordpress.js"],
   "directories": {
     "doc": "docs",
@@ -42,6 +43,9 @@
     "eslint-plugin-jsdoc": "^22.1.0",
     "eslint-plugin-sonarjs": "^0.5.0"
   },
+  "peerDependencies": {
+    "eslint": ">= 6"
+  },
   "devDependencies": {
     "@mgsisk/remark-lint-config": "^0.2.0",
     "eslint": "^6.8.0",
@@ -51,13 +55,7 @@
     "tap": "^14.10.7",
     "yaml-lint": "^1.2.4"
   },
-  "peerDependencies": {
-    "eslint": ">= 6"
-  },
   "eslintIgnore": [
-    ".git/",
-    ".nyc_output/",
-    ".vagrant/",
     "coverage/",
     "node_modules/"
   ]
