@@ -123,17 +123,6 @@ module.exports = {
     'no-undefined': 'error',
     'no-use-before-define': ['error', 'nofunc'],
 
-    // ----- Node.js and CommonJS ----------------------------------------------
-    'callback-return': 'error',
-    'handle-callback-err': 'error',
-    'no-buffer-constructor': 'error',
-    'no-mixed-requires': ['error', {allowCall: true}],
-    'no-new-require': 'error',
-    'no-path-concat': 'error',
-    'no-process-env': 'error',
-    'no-process-exit': 'error',
-    'no-sync': 'error',
-
     // ----- Stylistic Issues --------------------------------------------------
     'array-bracket-newline': ['error', 'consistent'],
     'array-bracket-spacing': 'error',
