@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * ESLint configuration for general development.
  *

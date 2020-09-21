@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint.js": "eslint -c index.js '**/*.js' '**/.*.js'",
-    "lint.json": "printf 'package-lock.json package.json' | xargs -n1 jsonlint -q",
+    "lint.json": "YAMLLINT_SCHEMA=JSON_SCHEMA yamllint '**/*.json'",
     "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
     "lint.sh": "shellcheck *.sh",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
@@ -31,7 +31,9 @@
   "bugs": "https://github.com/mgsisk/eslint-config/issues",
   "homepage": "https://github.com/mgsisk/eslint-config#readme",
   "funding": "https://github.com/mgsisk/eslint-config?sponsor=1",
-  "files": ["wordpress.js"],
+  "files": [
+    "wordpress.js"
+  ],
   "directories": {
     "doc": "docs",
     "test": "test"
@@ -49,7 +51,6 @@
   "devDependencies": {
     "@mgsisk/remark-lint-config": "^0.3.0",
     "eslint": "^7.9.0",
-    "jsonlint": "^1.6.3",
     "remark-cli": "^8.0.1",
     "shellcheck": "^0.4.4",
     "tap": "^14.10.8",
