@@ -30,6 +30,7 @@ module.exports = {
     'no-console': 'error',
     'no-extra-parens': 'error',
     'no-loss-of-precision': 'error',
+    'no-promise-executor-return': 'error',
     'no-template-curly-in-string': 'error',
     // 'no-useless-backreference': 'error',
     'require-atomic-updates': 'error',
