@@ -32,7 +32,7 @@ module.exports = {
     'no-loss-of-precision': 'error',
     'no-promise-executor-return': 'error',
     'no-template-curly-in-string': 'error',
-    // 'no-useless-backreference': 'error',
+    'no-useless-backreference': 'error',
     'require-atomic-updates': 'error',
 
     // ----- Best Practices ----------------------------------------------------
