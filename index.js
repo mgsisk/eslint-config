@@ -162,11 +162,12 @@ module.exports = {
     'max-len': [
       'error', {
         code: 120,
-        tabWidth: 1,
         ignoreRegExpLiterals: true,
-        ignoreTrailingComments: true,
+        ignoreStrings: true,
         ignoreTemplateLiterals: true,
+        ignoreTrailingComments: true,
         ignoreUrls: true,
+        tabWidth: 1,
       },
     ],
     'max-lines': [
