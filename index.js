@@ -8,7 +8,6 @@ module.exports = {
     ecmaVersion: 12,
     ecmaFeatures: {
       globalReturn: false,
-      impliedStrict: true,
     },
     sourceType: 'module',
   },
@@ -112,7 +111,7 @@ module.exports = {
     yoda: 'error',
 
     // ----- Strict Mode -------------------------------------------------------
-    // 'strict': 'error',
+    strict: 'error',
 
     // ----- Variables ---------------------------------------------------------
     'init-declarations': ['error', 'always'],
