@@ -318,6 +318,7 @@ module.exports = {
     'import/no-deprecated': 'error',
     'import/no-extraneous-dependencies': 'error',
     'import/no-mutable-exports': 'error',
+    'import/no-unused-modules': 'error',
     // 'import/unambiguous': 'error',
     // 'import/no-commonjs': 'error',
     'import/no-amd': 'error',
