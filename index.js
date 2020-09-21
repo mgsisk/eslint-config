@@ -143,8 +143,11 @@ module.exports = {
     'func-style': ['error', 'declaration'],
     'function-call-argument-newline': ['error', 'consistent'],
     'function-paren-newline': 'error',
-    'id-length': ['error', {exceptions: ['i', 'n', 'x']}],
     // 'id-denylist': 'error',
+    'id-length': ['error', {
+      max: 32,
+      min: 1,
+    }],
     // 'id-match': 'error',
     'implicit-arrow-linebreak': 'error',
     indent: ['error', 2, {SwitchCase: 1}],
