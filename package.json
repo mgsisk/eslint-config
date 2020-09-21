@@ -4,6 +4,7 @@
   "description": "Opinionated ESLint configurations for JavaScript development.",
   "main": "index.js",
   "scripts": {
+    "fix.js": "eslint --fix '**/*.js' '**/.*.js'",
     "lint.js": "eslint -c index.js '**/*.js' '**/.*.js'",
     "lint.json": "YAMLLINT_SCHEMA=JSON_SCHEMA yamllint '**/*.json'",
     "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
