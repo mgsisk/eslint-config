@@ -352,5 +352,6 @@ module.exports = {
     // 'jsdoc/require-file-overview': 'error',
     // 'jsdoc/require-hyphen-before-param-description': 'error',
     'jsdoc/require-returns-description': 'off',
+    'jsdoc/require-throws': 'error',
   },
 }
