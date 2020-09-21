@@ -37,22 +37,22 @@
     "test": "test"
   },
   "dependencies": {
-    "@wordpress/eslint-plugin": "^4.1.0",
-    "eslint-plugin-eslint-comments": "^3.1.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jsdoc": "^22.1.0",
+    "@wordpress/eslint-plugin": "^7.2.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsdoc": "^30.5.1",
     "eslint-plugin-sonarjs": "^0.5.0"
   },
   "peerDependencies": {
-    "eslint": ">= 6"
+    "eslint": ">= 7"
   },
   "devDependencies": {
-    "@mgsisk/remark-lint-config": "^0.2.0",
-    "eslint": "^6.8.0",
+    "@mgsisk/remark-lint-config": "^0.3.0",
+    "eslint": "^7.9.0",
     "jsonlint": "^1.6.3",
-    "remark-cli": "^8.0.0",
-    "shellcheck": "^0.4.2",
-    "tap": "^14.10.7",
+    "remark-cli": "^8.0.1",
+    "shellcheck": "^0.4.4",
+    "tap": "^14.10.8",
     "yaml-lint": "^1.2.4"
   },
   "eslintIgnore": [
