@@ -111,6 +111,9 @@ module.exports = {
     'wrap-iife': 'error',
     yoda: 'error',
 
+    // ----- Strict Mode -------------------------------------------------------
+    // 'strict': 'error',
+
     // ----- Variables ---------------------------------------------------------
     'init-declarations': ['error', 'always'],
     'no-label-var': 'error',
