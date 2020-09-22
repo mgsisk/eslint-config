@@ -1,8 +1,8 @@
 language: node_js
 
 node_js:
-  - lts/*
   - node
+  - lts/*
 
 env:
   global:
@@ -16,21 +16,25 @@ before_script:
 after_script:
   - ./cctr after-build -t lcov --exit-code $TRAVIS_TEST_RESULT
 
-deploy:
-  - provider: npm
-    email: me@mgsisk.com
-    api_key:
-      secure: WJYB8qCzhp1hOZK0LwpWzdG6Qd7CPQnHAQi5doQ2Hryy5aTdQCbdF1M5vqQZZXx91/2TEC3log54jTI5sk7+cj53y0Z4TYIqR2h0BavGJDuyhkqXH9czjzVNfmQ8xjeuoKD8AoBXz/qH8xsqnrg+0p1OnDsRpQWBfJ7TL6xr+qax9e0Bn0Q26YChu/YqiRHCU6up1Ud7s9wIS7mMlR2i0VY1DvF5exFMbHuhgUq3hNf3BpQ0eBDWyK45TEn1Y2oQVVgPpL6R1lHbZV7wnSRPQqHr3RKOQL3whjHOZWBEbbUTBK6OnWkvaUUBOpXW/5P1dj7P5SF+XltF7BPZ+g1DkzMMHpLGjc2zffDoL53rwMfiQQsPcXnaUwu7LUqz4BQjeC1Kmzrk39HaP3AeoXmGxeyhd2ype8QTfdi58b71kX77x0BdM7hl0Ysw+qrv9dKEfzooS5Q3HlYxfyOL5gi0O725VdqkRkdAvHN2Ju+vWDlpfHAC4UE7wFR4+ThiipyK/9VeYJPD+9yB9tQ09ksAcQK33vAnnzldHosMuuXdi7TDxMUtxMNs1C9ORJlDs8Kr+sp4iwgJoEiZ5RDhY+hBTUU5P5d+c63tJygId5llmCvsKcdlw2mqEJyDayvl9H/JVWC0PUHW9SW+rrsMu2CB87kF766M10nzqWQP3E2DUSw=
-    on:
-      repo: mgsisk/eslint-config
-      tags: true
-  - provider: npm
-    registry: https://npm.pkg.github.com
-    email: me@mgsisk.com
-    api_key:
-      secure: TM7RYNpRrVZkLCy57WkUicVgZIndjiEyw6tN50rPZrNAmdyUF/l2KW1xaZrwlZwfL7osMciJW85KGwVCFnr5FOHJwZetVI9Y7YtEG8TTSRTG9fxr+HOE3pPlIzggplkBh6PEGz5zCGEpriagjlUc2gXmM5xO5keoQ5GfiU/2KMpTlFKqKdRlaIm0DwQYMNFyHD58QrFDkvtVzKWKY/J5lbfAJO1w6MGgd7UgGuZHw1xLB85NOI/X0+DvrXmJqbiReSAy42HEdMbGXCUdk6hJK+FXjdUgyxyONW3+2vNyCrU7SLRWayYEQfk4qLBdk5EmFlqLBBPqBJXkX8M823F1iq83JvANQ64vlWsWCxkGrSfE4S8B9bjZHUVrUgE2zw65lkG9Pc9+aIGpMd/ep7e/KE0OPVm3m1i0/pnrD5LhfBA5U1ErKAZX/88vs7mNCbqZjx0hVpMyaSSKJni9hazfHWLerc8A+omtOBIUzE0J98whsTZDRZ+mQyU6v3XG3Nnm7vBV4wCqKa06eqEVLQMC9vji14ckl3kUWij0zYAxJQyO6fZi4rmTUIIBvJ/WgBkRuopE43C1/1zDN/ag7nVEqqJn1xGPtkHUxnymGJkZvHakpXnbwd+fYofo2eYrLAkzv9jq7uCM0syJYYVz0FmJCskVOPi4EzkUSP5nQRpzGQY=
-    edge:
-      branch: master
-    on:
-      repo: mgsisk/eslint-config
-      tags: true
+jobs:
+  include:
+    - stage: deploy
+      script: skip
+      deploy:
+        - provider: npm
+          email: me@mgsisk.com
+          api_key:
+            secure: nK8AV9YUOF+xBERlgOVpzvcJ9/LAoEfktdoa1IQeyxuQtvaxtsblG34/2eqsC8jeTkrqmMIswvAYrI7hEnQNFtdZKSkH0DMnB5fPFYFOA9C4OHhRxpeVlM6U7PxFNhWRDTKHjcygUs9mN1a5WRS1K/kMDF9ub/2SXM0AP7nbuOplTxIn9AmGZgfvu6tuvV8FBtXoft/imAAXOxQDx2ZsZFj7/ifaHacwdlksEMKnSKb4FMYg7PNVl/Zn4Ca2a4cxhv8qHeqcUbsjldU4x8nfS06cf+2/IO3In/wFVfiZ6zmR3rLUsTCYw7o0E91OAQG8t9I7GZTaCPB0qXFW/m/shZ+jksi2r3B1YpB/njhRPwSjJEHcWSRiUePEsJjDZ1pULoJN0EG0trYUCScYnkogcKZ+XAhJQzu2SK/Lg/GoMZoM4wijTl5oY69K1+xQDpX5oo7IyVi8YtRrQbM02WFEPUzowGAULVwydE7nYJyQHy02InFiLl/AB/dri9a9Ubjsp+UMMCO8tSQCO4aJTofxoLgiCADo0u1C6jxZXOTvxg3zz/U7qy3ENSZlNo23EJOz2SqoM3xZPs8ruyUKIPeRnCb5fHsCInCrhyhvK7aMGFWBA5kN5MYdBzdpKGxplS23TYPEKx4rTAeM4ZgDvPbBG3qzsIlesVUbMIVUNVuWYQ8=
+          on:
+            repo: mgsisk/eslint-config
+            tags: true
+        - provider: npm
+          registry: https://npm.pkg.github.com
+          email: me@mgsisk.com
+          api_key:
+            secure: TM7RYNpRrVZkLCy57WkUicVgZIndjiEyw6tN50rPZrNAmdyUF/l2KW1xaZrwlZwfL7osMciJW85KGwVCFnr5FOHJwZetVI9Y7YtEG8TTSRTG9fxr+HOE3pPlIzggplkBh6PEGz5zCGEpriagjlUc2gXmM5xO5keoQ5GfiU/2KMpTlFKqKdRlaIm0DwQYMNFyHD58QrFDkvtVzKWKY/J5lbfAJO1w6MGgd7UgGuZHw1xLB85NOI/X0+DvrXmJqbiReSAy42HEdMbGXCUdk6hJK+FXjdUgyxyONW3+2vNyCrU7SLRWayYEQfk4qLBdk5EmFlqLBBPqBJXkX8M823F1iq83JvANQ64vlWsWCxkGrSfE4S8B9bjZHUVrUgE2zw65lkG9Pc9+aIGpMd/ep7e/KE0OPVm3m1i0/pnrD5LhfBA5U1ErKAZX/88vs7mNCbqZjx0hVpMyaSSKJni9hazfHWLerc8A+omtOBIUzE0J98whsTZDRZ+mQyU6v3XG3Nnm7vBV4wCqKa06eqEVLQMC9vji14ckl3kUWij0zYAxJQyO6fZi4rmTUIIBvJ/WgBkRuopE43C1/1zDN/ag7nVEqqJn1xGPtkHUxnymGJkZvHakpXnbwd+fYofo2eYrLAkzv9jq7uCM0syJYYVz0FmJCskVOPi4EzkUSP5nQRpzGQY=
+          edge:
+            branch: master
+          on:
+            repo: mgsisk/eslint-config
+            tags: true
