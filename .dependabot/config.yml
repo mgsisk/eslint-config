@@ -10,3 +10,13 @@ update_configs:
     default_labels:
       - "change"
       - "dependencies"
+  - package_manager: "ruby:bundler"
+    directory: "/"
+    udpate_schedule: "monthly"
+    default_reviewers:
+      - "mgsisk"
+    default_assignees:
+      - "mgsisk"
+    default_labels:
+      - "change"
+      - "dependencies"
