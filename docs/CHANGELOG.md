@@ -4,9 +4,10 @@ Notable project changes. Versions are [semantic][].
 
 ## [Unreleased][]
 
-No unreleased changes.
+### Changed
+- Deployments now run in their own stage
 
-## [2.0.0][] - 2020-09-22
+## [2.0.0][] - 2020-09-21
 
 ### Added
 - `default-case-last` rule
@@ -18,11 +19,12 @@ No unreleased changes.
 - `no-useless-backreference` rule
 - `no-useless-backreference` rule
 - `prefer-regex-literals` rule
+- GitHub Packages deployment
 
 ### Changed
 - `ecmaVersion` to `12`
 - `id-length` is more lenient
-- `eslint` peer dependency to 7+
+- `eslint` peer dependency to `>= 7`
 
 ### Removed
 - Deprecated Node.js and CommonJS rules
