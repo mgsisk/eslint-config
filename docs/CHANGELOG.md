@@ -1,22 +1,40 @@
 # Changelog
 
-Documents notable project changes. Versions are [semantic][].
+Notable project changes. Versions are [semantic][].
 
 ## [Unreleased][]
 
-### Added
+No unreleased changes.
 
-- `no-useless-backreference` rule
+## [2.0.0][] - 2020-09-22
+
+### Added
 - `default-case-last` rule
+- `default-case-last` rule
+- `import/no-unused-modules` rule
+- `jsdoc/rquire-throws` rule
+- `no-loss-of-precision` rule
+- `no-promise-executor` rule
+- `no-useless-backreference` rule
+- `no-useless-backreference` rule
+- `prefer-regex-literals` rule
+
+### Changed
+- `ecmaVersion` to `12`
+- `id-length` is more lenient
+- `eslint` peer dependency to 7+
+
+### Removed
+- Deprecated Node.js and CommonJS rules
+- Rules from `eslint-plugin-import` and `eslint-plugin-jsdoc` that are already
+  included in the plugin's `recommended` configuration
 
 ## [1.0.0][] - 2020-04-11
 
 ### Changed
-
 - Project structure
 
 ### Removed
-
 - `jsdoc/require-returns-description` rule
 - `import/no-internal-modules` rule
 
@@ -77,7 +95,7 @@ Documents notable project changes. Versions are [semantic][].
 
 ### Changed
 - Replaced `jsonlint-cli` with `jsonlint`
-- Updated eslint plugin dependencies.
+- Updated eslint plugin dependencies
 
 ## [0.6.2][] - 2018-12-09
 
@@ -165,7 +183,8 @@ Documents notable project changes. Versions are [semantic][].
 - Standard ESLint configuration
 - WordPress ESlint configuration
 
-[Unreleased]: https://github.com/mgsisk/eslint-config/compare/v1.0.0...HEAD
+[unreleased]: https://github.com/mgsisk/eslint-config/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/mgsisk/eslint-config/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/mgsisk/eslint-config/compare/v0.9.0...v1.0.0
 [0.9.0]: https://github.com/mgsisk/eslint-config/compare/v0.8.1...v0.9.0
 [0.8.1]: https://github.com/mgsisk/eslint-config/compare/v0.8.0...v0.8.1
