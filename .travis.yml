@@ -19,7 +19,7 @@ after_script:
 jobs:
   include:
     - stage: deploy
-      script: skip
+      script: npm pack
       deploy:
         - provider: npm
           email: me@mgsisk.com
@@ -35,6 +35,15 @@ jobs:
             secure: TM7RYNpRrVZkLCy57WkUicVgZIndjiEyw6tN50rPZrNAmdyUF/l2KW1xaZrwlZwfL7osMciJW85KGwVCFnr5FOHJwZetVI9Y7YtEG8TTSRTG9fxr+HOE3pPlIzggplkBh6PEGz5zCGEpriagjlUc2gXmM5xO5keoQ5GfiU/2KMpTlFKqKdRlaIm0DwQYMNFyHD58QrFDkvtVzKWKY/J5lbfAJO1w6MGgd7UgGuZHw1xLB85NOI/X0+DvrXmJqbiReSAy42HEdMbGXCUdk6hJK+FXjdUgyxyONW3+2vNyCrU7SLRWayYEQfk4qLBdk5EmFlqLBBPqBJXkX8M823F1iq83JvANQ64vlWsWCxkGrSfE4S8B9bjZHUVrUgE2zw65lkG9Pc9+aIGpMd/ep7e/KE0OPVm3m1i0/pnrD5LhfBA5U1ErKAZX/88vs7mNCbqZjx0hVpMyaSSKJni9hazfHWLerc8A+omtOBIUzE0J98whsTZDRZ+mQyU6v3XG3Nnm7vBV4wCqKa06eqEVLQMC9vji14ckl3kUWij0zYAxJQyO6fZi4rmTUIIBvJ/WgBkRuopE43C1/1zDN/ag7nVEqqJn1xGPtkHUxnymGJkZvHakpXnbwd+fYofo2eYrLAkzv9jq7uCM0syJYYVz0FmJCskVOPi4EzkUSP5nQRpzGQY=
           edge:
             branch: master
+          on:
+            repo: mgsisk/eslint-config
+            tags: true
+        - provider: releases
+          skip_cleanup: true
+          file_glob: true
+          file: mgsisk-eslint-config-*.tgz
+          api_key:
+            secure: TM7RYNpRrVZkLCy57WkUicVgZIndjiEyw6tN50rPZrNAmdyUF/l2KW1xaZrwlZwfL7osMciJW85KGwVCFnr5FOHJwZetVI9Y7YtEG8TTSRTG9fxr+HOE3pPlIzggplkBh6PEGz5zCGEpriagjlUc2gXmM5xO5keoQ5GfiU/2KMpTlFKqKdRlaIm0DwQYMNFyHD58QrFDkvtVzKWKY/J5lbfAJO1w6MGgd7UgGuZHw1xLB85NOI/X0+DvrXmJqbiReSAy42HEdMbGXCUdk6hJK+FXjdUgyxyONW3+2vNyCrU7SLRWayYEQfk4qLBdk5EmFlqLBBPqBJXkX8M823F1iq83JvANQ64vlWsWCxkGrSfE4S8B9bjZHUVrUgE2zw65lkG9Pc9+aIGpMd/ep7e/KE0OPVm3m1i0/pnrD5LhfBA5U1ErKAZX/88vs7mNCbqZjx0hVpMyaSSKJni9hazfHWLerc8A+omtOBIUzE0J98whsTZDRZ+mQyU6v3XG3Nnm7vBV4wCqKa06eqEVLQMC9vji14ckl3kUWij0zYAxJQyO6fZi4rmTUIIBvJ/WgBkRuopE43C1/1zDN/ag7nVEqqJn1xGPtkHUxnymGJkZvHakpXnbwd+fYofo2eYrLAkzv9jq7uCM0syJYYVz0FmJCskVOPi4EzkUSP5nQRpzGQY=
           on:
             repo: mgsisk/eslint-config
             tags: true
