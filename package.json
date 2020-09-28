@@ -52,7 +52,7 @@
     "eslint": ">= 7"
   },
   "devDependencies": {
-    "@mgsisk/remark-lint-config": "^0.3.0",
+    "@mgsisk/remark-lint-config": "^0.4.0",
     "eslint": "^7.9.0",
     "remark-cli": "^8.0.1",
     "shellcheck": "^0.4.4",
