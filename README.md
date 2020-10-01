@@ -1,5 +1,7 @@
 # @mgsisk/eslint-config
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fa13e95f75d64d09baa7a434a6b2e9c8)](https://app.codacy.com/gh/mgsisk/eslint-config?utm_source=github.com&utm_medium=referral&utm_content=mgsisk/eslint-config&utm_campaign=Badge_Grade)
+
 Opinionated ESLint configurations for JavaScript development.
 
 [![Latest release][badge-release]][url-release]
