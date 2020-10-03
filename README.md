@@ -52,8 +52,8 @@ anyone that has found this project useful.
 [ISC][]
 
 [@wordpress/eslint-plugin]: https://www.npmjs.com/package/@wordpress/eslint-plugin
-[badge-build]: https://img.shields.io/travis/com/mgsisk/eslint-config
 [badge-coverage]: https://img.shields.io/codeclimate/coverage/mgsisk/eslint-config
+[badge-build]: https://img.shields.io/github/workflow/status/mgsisk/eslint-config/build
 [badge-funding]: https://img.shields.io/liberapay/receives/mgsisk
 [badge-maintainability]: https://img.shields.io/codeclimate/maintainability/mgsisk/eslint-config
 [badge-release]: https://img.shields.io/github/v/tag/mgsisk/eslint-config?sort=semver
@@ -66,8 +66,8 @@ anyone that has found this project useful.
 [other works]: https://github.com/mgsisk/eslint-config/blob/master/docs/THANKS.md
 [security]: https://github.com/mgsisk/eslint-config/blob/master/docs/SECURITY.md
 [support resources]: https://github.com/mgsisk/eslint-config/blob/master/docs/SUPPORT.md
-[url-build]: https://travis-ci.com/mgsisk/eslint-config
 [url-coverage]: https://codeclimate.com/github/mgsisk/eslint-config
+[url-build]: https://github.com/mgsisk/eslint-config/actions?query=workflow%3Abuild
 [url-funding]: https://github.com/mgsisk/eslint-config/blob/master/docs/CONTRIBUTING.md#funding
 [url-maintainability]: https://codeclimate.com/github/mgsisk/eslint-config
 [url-release]: https://github.com/mgsisk/eslint-config/releases
