@@ -4,7 +4,7 @@ Opinionated ESLint configurations for JavaScript development.
 
 [![Latest release][badge-release]][url-release]
 [![Build status][badge-build]][url-build]
-[![Code maintainability][badge-maintainability]][url-maintainability]
+[![Code quality][badge-quality]][url-quality]
 [![Test coverage][badge-coverage]][url-coverage]
 [![Maintainer funding][badge-funding]][url-funding]
 
@@ -52,10 +52,10 @@ anyone that has found this project useful.
 [ISC][]
 
 [@wordpress/eslint-plugin]: https://www.npmjs.com/package/@wordpress/eslint-plugin
-[badge-coverage]: https://img.shields.io/codeclimate/coverage/mgsisk/eslint-config
 [badge-build]: https://img.shields.io/github/workflow/status/mgsisk/eslint-config/build
+[badge-coverage]: https://img.shields.io/codacy/coverage/214d41f28f1e4970974e1ea25fe6492e
 [badge-funding]: https://img.shields.io/liberapay/receives/mgsisk
-[badge-maintainability]: https://img.shields.io/codeclimate/maintainability/mgsisk/eslint-config
+[badge-quality]: https://img.shields.io/codacy/grade/214d41f28f1e4970974e1ea25fe6492e
 [badge-release]: https://img.shields.io/github/v/tag/mgsisk/eslint-config?sort=semver
 [changelog]: docs/CHANGELOG.md
 [code of conduct]: https://github.com/mgsisk/eslint-config/blob/master/docs/CODE_OF_CONDUCT.md
@@ -66,8 +66,8 @@ anyone that has found this project useful.
 [other works]: https://github.com/mgsisk/eslint-config/blob/master/docs/THANKS.md
 [security]: https://github.com/mgsisk/eslint-config/blob/master/docs/SECURITY.md
 [support resources]: https://github.com/mgsisk/eslint-config/blob/master/docs/SUPPORT.md
-[url-coverage]: https://codeclimate.com/github/mgsisk/eslint-config
 [url-build]: https://github.com/mgsisk/eslint-config/actions?query=workflow%3Abuild
+[url-coverage]: https://app.codacy.com/gh/mgsisk/eslint-config
 [url-funding]: https://github.com/mgsisk/eslint-config/blob/master/docs/CONTRIBUTING.md#funding
-[url-maintainability]: https://codeclimate.com/github/mgsisk/eslint-config
+[url-quality]: https://app.codacy.com/gh/mgsisk/eslint-config
 [url-release]: https://github.com/mgsisk/eslint-config/releases
