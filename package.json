@@ -4,10 +4,10 @@
   "description": "Opinionated ESLint configurations for JavaScript development.",
   "main": "index.js",
   "scripts": {
-    "fix.js": "eslint --fix '**/*.js' '**/.*.js'",
+    "fix.js": "eslint . --fix",
     "fix.md": "remark . .github/ --ignore-pattern 'LICENSE*' -o",
     "fix.sh": "shellcheck *.sh -f diff | git apply",
-    "lint.js": "eslint -c index.js '**/*.js' '**/.*.js'",
+    "lint.js": "eslint .",
     "lint.json": "YAMLLINT_SCHEMA=JSON_SCHEMA yamllint '**/*.json' '**/.*.json'",
     "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
     "lint.sh": "shellcheck *.sh",
@@ -44,16 +44,16 @@
   "dependencies": {
     "@wordpress/eslint-plugin": "^7.2.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsdoc": "^30.5.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.6.3",
     "eslint-plugin-sonarjs": "^0.5.0"
   },
   "peerDependencies": {
     "eslint": ">= 7"
   },
   "devDependencies": {
-    "@mgsisk/remark-lint-config": "^0.3.0",
-    "eslint": "^7.9.0",
+    "@mgsisk/remark-lint-config": "^0.4.0",
+    "eslint": "^7.10.0",
     "remark-cli": "^8.0.1",
     "shellcheck": "^0.4.4",
     "tap": "^14.10.8",

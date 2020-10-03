@@ -4,8 +4,13 @@ Notable project changes. Versions are [semantic][].
 
 ## [Unreleased][]
 
+### Added
+- eslint config
+- n to Vagrant environment
+
 ### Changed
-- Deployments now run in their own stage
+- Replaced CodeClimate with Codacy
+- Replaced Travis with Github Actions workflow
 
 ## [2.0.0][] - 2020-09-21
 
