@@ -54,7 +54,7 @@
   "devDependencies": {
     "@mgsisk/remark-lint-config": "^0.4.0",
     "eslint": "^7.10.0",
-    "remark-cli": "^8.0.1",
+    "remark-cli": "^9.0.0",
     "shellcheck": "^0.4.4",
     "tap": "^14.10.8",
     "yaml-lint": "^1.2.4"
