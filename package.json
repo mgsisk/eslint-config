@@ -45,7 +45,7 @@
     "@wordpress/eslint-plugin": "^7.2.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^30.6.3",
+    "eslint-plugin-jsdoc": "^31.0.6",
     "eslint-plugin-sonarjs": "^0.5.0"
   },
   "peerDependencies": {
