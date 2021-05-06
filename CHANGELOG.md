@@ -5,65 +5,86 @@ Notable project changes. Versions are [semantic][].
 ## [Unreleased][]
 
 ### Added
-- eslint config
-- n to Vagrant environment
+
+- `eslint-plugin-promise`
+- `no-nonoctal-decimal-escape`
+- `no-unsafe-optional-chaining`
+- babel config with `@babel/eslint-parser` and `@babel/eslint-plugin`
+- typescript config with `@typescript-eslint/parser` and
+  `@typescript-eslint/eslint-plugin`
 
 ### Changed
+
+- `env` to `es2021`
+- `strict` to `safe`
+- Project structure
 - Replaced CodeClimate with Codacy
 - Replaced Travis with Github Actions workflow
+
+### Removed
+
+- `ecmaVersion`
+- `sourceType`
 
 ## [2.0.0][] - 2020-09-21
 
 ### Added
-- `default-case-last` rule
-- `default-case-last` rule
-- `import/no-unused-modules` rule
-- `jsdoc/rquire-throws` rule
-- `no-loss-of-precision` rule
-- `no-promise-executor` rule
-- `no-useless-backreference` rule
-- `no-useless-backreference` rule
-- `prefer-regex-literals` rule
+
+- `default-case-last`
+- `default-case-last`
+- `import/no-unused-modules`
+- `jsdoc/rquire-throws`
+- `no-loss-of-precision`
+- `no-promise-executor`
+- `no-useless-backreference`
+- `no-useless-backreference`
+- `prefer-regex-literals`
 - GitHub Packages deployment
 
 ### Changed
+
 - `ecmaVersion` to `12`
 - `id-length` is more lenient
 - `eslint` peer dependency to `>= 7`
 
 ### Removed
-- Deprecated Node.js and CommonJS rules
+
+- Deprecated Node.js and CommonJSs
 - Rules from `eslint-plugin-import` and `eslint-plugin-jsdoc` that are already
   included in the plugin's `recommended` configuration
 
 ## [1.0.0][] - 2020-04-11
 
 ### Changed
+
 - Project structure
 
 ### Removed
-- `jsdoc/require-returns-description` rule
-- `import/no-internal-modules` rule
+
+- `jsdoc/require-returns-description`
+- `import/no-internal-modules`
 
 ## [0.9.0][] - 2020-03-09
 
 ### Added
-- `default-param-last` rule
-- `function-call-argument-newline` rule
-- `grouped-accessor-pairs` rule
-- `no-constructor-return` rule
-- `prefer-exponentiation-operator` rule
-- `require-atomic-updates` rule
-- `import/no-unused-modules` rule
-- `jsdoc/check-property-names` rule
-- `jsdoc/check-values` rule
-- `jsdoc/empty-tags` rule
-- `jsdoc/require-property-description` rule
-- `jsdoc/require-property-name` rule
-- `jsdoc/require-property-type` rule
-- `jsdoc/require-property` rule
+
+- `default-param-last`
+- `function-call-argument-newline`
+- `grouped-accessor-pairs`
+- `no-constructor-return`
+- `prefer-exponentiation-operator`
+- `require-atomic-updates`
+- `import/no-unused-modules`
+- `jsdoc/check-property-names`
+- `jsdoc/check-values`
+- `jsdoc/empty-tags`
+- `jsdoc/require-property-description`
+- `jsdoc/require-property-name`
+- `jsdoc/require-property-type`
+- `jsdoc/require-property`
 
 ### Changed
+
 - Using `plugin:eslint-comments/recommended`
 - Using `plugin:eslint-import/recommended`
 - Using `plugin:jsdoc/recommended`
@@ -73,22 +94,25 @@ Notable project changes. Versions are [semantic][].
 ## [0.8.1][] - 2019-07-30
 
 ### Removed
-- jsdoc/require-description rule
+
+- jsdoc/require-description
 
 ## [0.8.0][] - 2019-07-30
 
 ### Added
-- no-console rule
-- jsdoc/check-alignment rule
-- jsdoc/check-indentation rule
-- jsdoc/check-syntax rule
-- jsdoc/implements-no-classes rule
-- jsdoc/require-description rule
-- jsdoc/require-jsdoc rule
-- sonarjs/no-one-iteration-loop rule
-- sonarjs/no-collapsible-if rule
+
+- no-console
+- jsdoc/check-alignment
+- jsdoc/check-indentation
+- jsdoc/check-syntax
+- jsdoc/implements-no-classes
+- jsdoc/require-description
+- jsdoc/require-jsdoc
+- sonarjs/no-one-iteration-loop
+- sonarjs/no-collapsible-if
 
 ### Changed
+
 - Replaced `eslint-config-wordpress` with `@wordpress/eslint-plugin`
 - Updated package dependencies
 - Updated tests for new WordPress standards
@@ -96,90 +120,110 @@ Notable project changes. Versions are [semantic][].
 ## [0.7.0][] - 2019-02-26
 
 ### Added
-- jsdoc/check-examples rule
-- jsdoc/require-returns-check rule
-- jsdoc/require-returns rule
+
+- jsdoc/check-examples
+- jsdoc/require-returns-check
+- jsdoc/require-returns
 
 ### Changed
+
 - Replaced `jsonlint-cli` with `jsonlint`
 - Updated eslint plugin dependencies
 
 ## [0.6.2][] - 2018-12-09
 
 ### Changed
+
 - Replaced `js-yaml` with `yaml-lint`
 - Replaced `jsonlint` with `jsonlint-cli`
 
 ### Fixed
+
 - Missing Code Climate report ID
 
 ## [0.6.1][] - 2018-12-07
 
 ### Added
+
 - Tests with code coverage
 
 ### Changed
+
 - Moved npm deployment to Travis configuration
 - Replaced `markdownlint-cli` with `remark-lint`
 
 ## [0.6.0][] - 2018-12-07
 
 ### Added
+
 - Quote exception to avoid escaping
 
 ### Changed
+
 - Added quote exceptions to allow template literals and avoid escaping
 
 ## [0.5.0][] - 2018-12-06
 
 ### Added
+
 - Same-line exception for `object-property-newline`
 
 ## [0.4.2][] - 2018-12-06
 
 ### Fixed
+
 - Installation instructions in readme
 
 ## [0.4.1][] - 2018-12-06
 
 ### Added
+
 - preversion script to run tests before version bump
 
 ### Changed
+
 - postversion script now publishes to npm on version bump
 
 ### Fixed
+
 - eslint scripts
 - broken URL's in repo documentation
 
 ## [0.4.0][] - 2018-12-06
 
 ### Added
+
 - editorconfig and git-legal checks to Code Climate
 
 ### Changed
+
 - Simplified npm scripts
 
 ### Removed
+
 - WordPress-specific editorconfig settings
 - Code coverage badge and checks
 
 ## [0.3.1][] - 2018-12-05
 
 ### Fixed
+
 - Changelog links
 
 ## [0.3.0][] - 2018-12-05
 
 ### Changed
+
 - Simplified WordPress configuration
 
 ### Removed
+
 - `iojs` from Travis configuration
 
 ## [0.2.0][] - 2018-12-05
 
 ### Added
+
 - Code Climate configuration
 - Travis configuration
 - .npmignore file
@@ -187,6 +231,7 @@ Notable project changes. Versions are [semantic][].
 ## [0.1.0][] - 2018-12-05
 
 ### Added
+
 - Standard ESLint configuration
 - WordPress ESlint configuration
 

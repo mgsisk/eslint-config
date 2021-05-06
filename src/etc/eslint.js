@@ -1,28 +1,4 @@
-/**
- * ESLint configuration for general development.
- *
- * @type {object}
- */
 module.exports = {
-  parserOptions: {
-    ecmaVersion: 12,
-    ecmaFeatures: {
-      globalReturn: false,
-    },
-    sourceType: 'module',
-  },
-  env: {
-    browser: true,
-    node: true,
-  },
-  plugins: ['eslint-comments', 'import', 'jsdoc', 'sonarjs'],
-  extends: [
-    'eslint:recommended',
-    'plugin:eslint-comments/recommended',
-    'plugin:import/recommended',
-    'plugin:jsdoc/recommended',
-    'plugin:sonarjs/recommended',
-  ],
   rules: {
     // ----- Possible Errors ---------------------------------------------------
     'no-await-in-loop': 'error',
@@ -32,6 +8,7 @@ module.exports = {
     'no-promise-executor-return': 'error',
     'no-template-curly-in-string': 'error',
     // 'no-unreachable-loop': 'error',
+    'no-unsafe-optional-chaining': ['error', {disallowArithmeticOperators: true}],
     'no-useless-backreference': 'error',
     'require-atomic-updates': 'error',
 
@@ -78,6 +55,7 @@ module.exports = {
     'no-new': 'error',
     'no-new-func': 'error',
     'no-new-wrappers': 'error',
+    'no-nonoctal-decimal-escape': 'error',
     'no-octal-escape': 'error',
     // 'no-param-reassign': 'error',
     'no-proto': 'error',
@@ -111,7 +89,7 @@ module.exports = {
     yoda: 'error',
 
     // ----- Strict Mode -------------------------------------------------------
-    strict: 'error',
+    strict: ['error', 'safe'],
 
     // ----- Variables ---------------------------------------------------------
     'init-declarations': ['error', 'always'],
@@ -299,58 +277,5 @@ module.exports = {
     'symbol-description': 'error',
     'template-curly-spacing': 'error',
     'yield-star-spacing': 'error',
-
-    // ----- Plugins -----------------------------------------------------------
-    'eslint-comments/no-unused-disable': 'error',
-    // 'eslint-comments/no-restricted-disable': 'error',
-    // 'eslint-comments/no-use': 'error',
-    // 'eslint-comments/require-description': 'error',
-    // 'import/no-restricted-paths': 'error',
-    'import/no-absolute-path': 'error',
-    'import/no-dynamic-require': 'error',
-    // 'import/no-internal-modules': 'error',
-    'import/no-webpack-loader-syntax': 'error',
-    'import/no-self-import': 'error',
-    'import/no-cycle': 'error',
-    'import/no-useless-path-segments': 'error',
-    'import/no-relative-parent-imports': 'error',
-    'import/no-deprecated': 'error',
-    'import/no-extraneous-dependencies': 'error',
-    'import/no-mutable-exports': 'error',
-    'import/no-unused-modules': 'error',
-    // 'import/unambiguous': 'error',
-    // 'import/no-commonjs': 'error',
-    'import/no-amd': 'error',
-    // 'import/no-nodejs-modules': 'error',
-    'import/first': 'error',
-    'import/exports-last': 'error',
-    'import/no-namespace': 'error',
-    'import/extensions': ['error', 'always'],
-    // 'import/order': 'error',
-    'import/newline-after-import': 'error',
-    'import/prefer-default-export': 'error',
-    'import/max-dependencies': ['error', {max: 16}],
-    'import/no-unassigned-import': 'error',
-    'import/no-named-default': 'error',
-    // 'import/no-default-export': 'error',
-    // 'import/no-named-export': 'error',
-    'import/no-anonymous-default-export': 'error',
-    'import/group-exports': 'error',
-    // 'import/dynamic-import-chunkname': 'error',
-    'jsdoc/check-examples': 'error',
-    'jsdoc/check-indentation': 'error',
-    // 'jsdoc/check-line-alignment': 'error',
-    'jsdoc/check-syntax': 'error',
-    // 'jsdoc/match-description': 'error',
-    // 'jsdoc/no-bad-blocks': 'error',
-    // 'jsdoc/no-defaults': 'error',
-    // 'jsdoc/no-types': 'error',
-    'jsdoc/require-description-complete-sentence': 'error',
-    // 'jsdoc/require-description': 'error',
-    // 'jsdoc/require-example': 'error',
-    // 'jsdoc/require-file-overview': 'error',
-    // 'jsdoc/require-hyphen-before-param-description': 'error',
-    'jsdoc/require-returns-description': 'off',
-    'jsdoc/require-throws': 'error',
   },
 }

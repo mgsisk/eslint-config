@@ -3,3 +3,6 @@ engines:
   remark-lint:
     exclude_paths:
       - LICENSE.md
+  eslint:
+    exclude_paths:
+      - 'test/typescript/**'

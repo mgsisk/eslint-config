@@ -1,5 +1,6 @@
-extends: './index.js'
+extends: './src/cnf/index'
+env:
+  node: true
 ignorePatterns:
-  - '!.*'
   - coverage/
   - node_modules/

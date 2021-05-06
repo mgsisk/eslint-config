@@ -1,23 +1,8 @@
 {
   "name": "@mgsisk/eslint-config",
+  "main": "index.js",
   "version": "2.0.0",
   "description": "Opinionated ESLint configurations for JavaScript development.",
-  "main": "index.js",
-  "scripts": {
-    "fix.js": "eslint . --fix",
-    "fix.md": "remark . .github/ --ignore-pattern 'LICENSE*' -o",
-    "fix.sh": "shellcheck *.sh -f diff | git apply",
-    "lint.js": "eslint .",
-    "lint.json": "YAMLLINT_SCHEMA=JSON_SCHEMA yamllint '**/*.json' '**/.*.json'",
-    "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
-    "lint.sh": "shellcheck *.sh",
-    "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
-    "test": "tap test",
-    "preversion": "npm test",
-    "version": "git add --all",
-    "postversion": "git push --follow-tags"
-  },
-  "repository": "github:mgsisk/eslint-config",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -29,38 +14,57 @@
     "linting",
     "wordpress"
   ],
-  "author": "mgsisk <me@mgsisk.com> (https://mgsisk.com)",
-  "license": "ISC",
-  "bugs": "https://github.com/mgsisk/eslint-config/issues",
   "homepage": "https://github.com/mgsisk/eslint-config#readme",
+  "bugs": "https://github.com/mgsisk/eslint-config/issues",
+  "license": "ISC",
   "funding": "https://github.com/mgsisk/eslint-config?sponsor=1",
+  "author": "mgsisk <me@mgsisk.com> (https://mgsisk.com)",
   "files": [
+    "src/",
+    "babel.js",
+    "typescript.js",
     "wordpress.js"
   ],
   "directories": {
     "doc": "docs",
+    "lib": "src",
     "test": "test"
   },
+  "repository": "github:mgsisk/eslint-config",
+  "scripts": {
+    "fix.js": "eslint --fix '**/*.js'",
+    "fix.md": "remark . .github/ --ignore-pattern 'LICENSE*' -o",
+    "lint.js": "eslint '**/*.js'",
+    "lint.json": "YAMLLINT_SCHEMA=JSON_SCHEMA yamllint '**/*.json' '**/.*.json'",
+    "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
+    "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
+    "prepack": "node src/make",
+    "test": "tap test",
+    "preversion": "npm test",
+    "version": "git add --all",
+    "postversion": "git push --follow-tags"
+  },
   "dependencies": {
-    "@wordpress/eslint-plugin": "^7.2.1",
+    "@babel/eslint-parser": "^7.13.14",
+    "@babel/eslint-plugin": "^7.13.16",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "@wordpress/eslint-plugin": "^8.0.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^30.6.3",
-    "eslint-plugin-sonarjs": "^0.5.0"
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsdoc": "^33.0.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-sonarjs": "^0.7.0"
   },
   "peerDependencies": {
-    "eslint": ">= 7"
+    "eslint": "^7.25.0"
   },
   "devDependencies": {
-    "@mgsisk/remark-lint-config": "^0.4.0",
-    "eslint": "^7.10.0",
-    "remark-cli": "^8.0.1",
-    "shellcheck": "^0.4.4",
-    "tap": "^14.10.8",
+    "@mgsisk/remark-lint-config": "^0.5.0",
+    "@tsconfig/recommended": "^1.0.1",
+    "eslint": "7.25.0",
+    "remark-cli": "^9.0.0",
+    "tap": "^15.0.6",
     "yaml-lint": "^1.2.4"
-  },
-  "eslintIgnore": [
-    "coverage/",
-    "node_modules/"
-  ]
+  }
 }
