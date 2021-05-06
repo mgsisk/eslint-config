@@ -4,16 +4,21 @@ Opinionated ESLint configurations for JavaScript development.
 
 [![Latest release][badge-release]][url-release]
 [![Build status][badge-build]][url-build]
-[![Code quality][badge-quality]][url-quality]
-[![Test coverage][badge-coverage]][url-coverage]
+[![Code quality][badge-quality]][url-codacy]
+[![Test coverage][badge-coverage]][url-codacy]
 [![Maintainer funding][badge-funding]][url-funding]
 
 The @mgsisk/eslint-config package includes opinionated [ESLint][] configurations
 for JavaScript development.
 
 - `@mgsisk/eslint-config` – Standard configuration for general development.
-- `@mgsisk/eslint-config/wordpress` – Customized version of
-  [@wordpress/eslint-plugin][] for WordPress plugin and theme development.
+- `@mgsisk/eslint-config/babel` – Configuration for development with Babel using
+  [@babel/eslint-parser][] and extra rules form [@babel/eslint-plugin][].
+- `@mgsisk/eslint-config/typescript` – Configuration for TypeScript development
+  using [@typescript-eslint/parser][] and extra rules from
+  [@typescript-eslint/eslint-plugin][].
+- `@mgsisk/eslint-config/wordpress` – Configuration for WordPress development
+  using [@wordpress/eslint-plugin][].
 
 ## Installation
 
@@ -24,16 +29,12 @@ npm install --save-dev @mgsisk/eslint-config
 ## Usage
 
 ```js
-// .eslintrc.js
-
-module.exports = {
-  …
-  extends: ['@mgsisk/eslint-config'],
-  …
-}
+// .eslintrc.yml
+extends: '@mgsisk/eslint-config'
 ```
 
-[Support resources][] are available if you need help with this project.
+[Support resources][] are available if you need help with this project. Refer to
+individual plugin documentation for more information on how each works.
 
 ## Contributing
 
@@ -51,23 +52,26 @@ anyone that has found this project useful.
 
 [ISC][]
 
+[@babel/eslint-parser]: https://www.npmjs.com/package/@wordpress/eslint-plugin
+[@babel/eslint-plugin]: https://www.npmjs.com/package/@wordpress/eslint-plugin
+[@typescript-eslint/eslint-plugin]: https://www.npmjs.com/package/@wordpress/eslint-plugin
+[@typescript-eslint/parser]: https://www.npmjs.com/package/@wordpress/eslint-plugin
 [@wordpress/eslint-plugin]: https://www.npmjs.com/package/@wordpress/eslint-plugin
 [badge-build]: https://img.shields.io/github/workflow/status/mgsisk/eslint-config/build
 [badge-coverage]: https://img.shields.io/codacy/coverage/214d41f28f1e4970974e1ea25fe6492e
 [badge-funding]: https://img.shields.io/liberapay/receives/mgsisk
 [badge-quality]: https://img.shields.io/codacy/grade/214d41f28f1e4970974e1ea25fe6492e
 [badge-release]: https://img.shields.io/github/v/tag/mgsisk/eslint-config?sort=semver
-[changelog]: docs/CHANGELOG.md
-[code of conduct]: https://github.com/mgsisk/eslint-config/blob/master/docs/CODE_OF_CONDUCT.md
-[contributions]: https://github.com/mgsisk/eslint-config/blob/master/docs/CONTRIBUTING.md
-[contributors]: https://github.com/mgsisk/eslint-config/blob/master/docs/AUTHORS.md
+[changelog]: CHANGELOG.md
+[code of conduct]: CODE_OF_CONDUCT.md
+[contributions]: CONTRIBUTING.md
+[contributors]: AUTHORS.md
 [eslint]: https://eslint.org
-[isc]: https://github.com/mgsisk/eslint-config/blob/master/LICENSE.md
-[other works]: https://github.com/mgsisk/eslint-config/blob/master/docs/THANKS.md
-[security]: https://github.com/mgsisk/eslint-config/blob/master/docs/SECURITY.md
-[support resources]: https://github.com/mgsisk/eslint-config/blob/master/docs/SUPPORT.md
+[isc]: LICENSE.md
+[other works]: THANKS.md
+[security]: SECURITY.md
+[support resources]: SUPPORT.md
 [url-build]: https://github.com/mgsisk/eslint-config/actions?query=workflow%3Abuild
-[url-coverage]: https://app.codacy.com/gh/mgsisk/eslint-config
-[url-funding]: https://github.com/mgsisk/eslint-config/blob/master/docs/CONTRIBUTING.md#funding
-[url-quality]: https://app.codacy.com/gh/mgsisk/eslint-config
+[url-codacy]: https://app.codacy.com/gh/mgsisk/eslint-config
+[url-funding]: CONTRIBUTING.md#funding
 [url-release]: https://github.com/mgsisk/eslint-config/releases
