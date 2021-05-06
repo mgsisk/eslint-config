@@ -49,12 +49,13 @@
     "@babel/eslint-plugin": "^7.13.16",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
     "@typescript-eslint/parser": "^4.22.1",
-    "@wordpress/eslint-plugin": "^8.0.0",
+    "@wordpress/eslint-plugin": "^9.0.4",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsdoc": "^33.0.0",
     "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-sonarjs": "^0.7.0"
+    "eslint-plugin-sonarjs": "^0.7.0",
+    "typescript": "^4.2.4"
   },
   "peerDependencies": {
     "eslint": "^7.25.0"

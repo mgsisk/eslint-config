@@ -1,9 +1,18 @@
-const eslint = require('eslint')
+const {ESLint} = require('eslint')
 const tap = require('tap')
 
-const engine = new eslint.CLIEngine({configFile: './index.js'})
-const [test1] = engine.executeOnText('const x = 1\n\nparseFloat(x)\n').results
-const [test2] = engine.executeOnText('let x = "y"').results
+/**
+ * Run standard config tests.
+ *
+ * @returns {void}
+ */
+async function test() {
+  const eslint = new ESLint({overrideConfigFile: './src/cnf/index.js', useEslintrc: false})
+  const [test1] = await eslint.lintText('const x = 1\n\nparseFloat(x)\n')
+  const [test2] = await eslint.lintText('let x = "y"')
 
-tap.equal(test1.errorCount, 0, 'It passes valid JavaScript')
-tap.equal(test2.errorCount, 4, 'It lints invalid JavaScript')
+  tap.equal(test1.errorCount, 0, 'It passes valid JavaScript')
+  tap.equal(test2.errorCount, 4, 'It lints invalid JavaScript')
+}
+
+test()
