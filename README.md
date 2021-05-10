@@ -52,11 +52,11 @@ anyone that has found this project useful.
 
 [ISC][]
 
-[@babel/eslint-parser]: https://www.npmjs.com/package/@wordpress/eslint-plugin
-[@babel/eslint-plugin]: https://www.npmjs.com/package/@wordpress/eslint-plugin
-[@typescript-eslint/eslint-plugin]: https://www.npmjs.com/package/@wordpress/eslint-plugin
-[@typescript-eslint/parser]: https://www.npmjs.com/package/@wordpress/eslint-plugin
-[@wordpress/eslint-plugin]: https://www.npmjs.com/package/@wordpress/eslint-plugin
+[@babel/eslint-parser]: https://npmjs.com/package/@wordpress/eslint-plugin
+[@babel/eslint-plugin]: https://npmjs.com/package/@wordpress/eslint-plugin
+[@typescript-eslint/eslint-plugin]: https://npmjs.com/package/@wordpress/eslint-plugin
+[@typescript-eslint/parser]: https://npmjs.com/package/@wordpress/eslint-plugin
+[@wordpress/eslint-plugin]: https://npmjs.com/package/@wordpress/eslint-plugin
 [badge-build]: https://img.shields.io/github/workflow/status/mgsisk/eslint-config/build
 [badge-coverage]: https://img.shields.io/codacy/coverage/214d41f28f1e4970974e1ea25fe6492e
 [badge-funding]: https://img.shields.io/liberapay/receives/mgsisk
