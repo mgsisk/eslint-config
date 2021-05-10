@@ -18,10 +18,10 @@ the standard ESLint rules:
 - [eslint-plugin-promise][]
 - [eslint-plugin-sonarjs][]
 
-[@babel/eslint-parser]: https://www.npmjs.com/package/@wordpress/eslint-plugin
-[@babel/eslint-plugin]: https://www.npmjs.com/package/@wordpress/eslint-plugin
-[@typescript-eslint/eslint-plugin]: https://www.npmjs.com/package/@wordpress/eslint-plugin
-[@typescript-eslint/parser]: https://www.npmjs.com/package/@wordpress/eslint-plugin
+[@babel/eslint-parser]: https://npmjs.com/package/@wordpress/eslint-plugin
+[@babel/eslint-plugin]: https://npmjs.com/package/@wordpress/eslint-plugin
+[@typescript-eslint/eslint-plugin]: https://npmjs.com/package/@wordpress/eslint-plugin
+[@typescript-eslint/parser]: https://npmjs.com/package/@wordpress/eslint-plugin
 [@wordpress/eslint-plugin]: https://npmjs.com/package/@wordpress/eslint-plugin
 [authors]: AUTHORS.md
 [eslint-plugin-eslint-comments]: https://npmjs.com/package/eslint-plugin-eslint-comments
