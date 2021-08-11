@@ -17,7 +17,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision 'file', source: gitignore, destination: '~/.gitignore' if File.file?(gitignore)
   config.vm.provision 'file', source: npmrc, destination: '~/.npmrc' if File.file?(npmrc)
   config.vm.provision 'file', source: vimrc, destination: '~/.vimrc' if File.file?(vimrc)
-  config.vm.provision 'shell', path: 'https://github.com/mgsisk/providence/releases/download/v0.1.0/provisioner.sh', env: {
+  config.vm.provision 'shell', path: 'https://github.com/mgsisk/providence/releases/download/v0.1.1/provisioner.sh', env: {
     'ZONE' => ENV['ZONE'],
   }
 end
