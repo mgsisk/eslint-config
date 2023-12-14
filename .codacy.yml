@@ -5,4 +5,4 @@ engines:
       - LICENSE.md
   eslint:
     exclude_paths:
-      - 'test/typescript/**'
+      - "test/typescript/**"
