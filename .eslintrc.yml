@@ -1,6 +1,5 @@
-extends: './src/cnf/index'
+extends: "./src/cnf/index"
 env:
   node: true
 ignorePatterns:
-  - coverage/
   - node_modules/
