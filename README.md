@@ -17,8 +17,6 @@ for JavaScript development.
 - `@mgsisk/eslint-config/typescript` – Configuration for TypeScript development
   using [@typescript-eslint/parser][] and extra rules from
   [@typescript-eslint/eslint-plugin][].
-- `@mgsisk/eslint-config/wordpress` – Configuration for WordPress development
-  using [@wordpress/eslint-plugin][].
 
 ## Installation
 
@@ -52,11 +50,10 @@ anyone that has found this project useful.
 
 [ISC][]
 
-[@babel/eslint-parser]: https://npmjs.com/package/@wordpress/eslint-plugin
-[@babel/eslint-plugin]: https://npmjs.com/package/@wordpress/eslint-plugin
-[@typescript-eslint/eslint-plugin]: https://npmjs.com/package/@wordpress/eslint-plugin
-[@typescript-eslint/parser]: https://npmjs.com/package/@wordpress/eslint-plugin
-[@wordpress/eslint-plugin]: https://npmjs.com/package/@wordpress/eslint-plugin
+[@babel/eslint-parser]: https://www.npmjs.com/package/@babel/eslint-parser
+[@babel/eslint-plugin]: https://www.npmjs.com/package/@babel/eslint-plugin
+[@typescript-eslint/eslint-plugin]: https://www.npmjs.com/package/@typescript-eslint/eslint-plugin
+[@typescript-eslint/parser]: https://npmjs.com/package/@typescript-eslint/parser
 [badge-build]: https://img.shields.io/github/workflow/status/mgsisk/eslint-config/build
 [badge-coverage]: https://img.shields.io/codacy/coverage/214d41f28f1e4970974e1ea25fe6492e
 [badge-funding]: https://img.shields.io/liberapay/receives/mgsisk
