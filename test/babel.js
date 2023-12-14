@@ -1,4 +1,5 @@
 const { ESLint } = require("eslint");
+const path = require("path");
 const tap = require("tap");
 
 /**
@@ -12,7 +13,12 @@ async function test() {
         requireConfigFile: false,
       },
     },
-    overrideConfigFile: "./src/cnf/babel.js",
+    overrideConfigFile: path.join(
+      path.dirname(__dirname),
+      "src",
+      "cnf",
+      "babel.js",
+    ),
     useEslintrc: false,
   });
   const [testPass] = await eslint.lintText("const x = 1\n\nparseFloat(x)\n");
