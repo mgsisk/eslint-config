@@ -25,7 +25,7 @@ module.exports = {
     "arrow-body-style": "error",
     "block-scoped-var": "error",
     camelcase: "error",
-    "capitalized-comments": "error",
+    // "capitalized-comments": "error",
     "class-methods-use-this": "error",
     complexity: ["error", 8],
     // "consistent-return": "error",
@@ -44,7 +44,7 @@ module.exports = {
     "id-length": [
       "error",
       {
-        max: 32,
+        max: 40,
         min: 1,
       },
     ],
@@ -175,7 +175,7 @@ module.exports = {
     radix: ["error", "as-needed"],
     "require-await": "error",
     "require-unicode-regexp": "error",
-    "sort-imports": "error",
+    // "sort-imports": "error",
     // "sort-keys": "error",
     // "sort-vars": "error",
     strict: ["error", "safe"],
