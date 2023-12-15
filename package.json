@@ -16,8 +16,8 @@
   "homepage": "https://github.com/mgsisk/eslint-config#readme",
   "bugs": "https://github.com/mgsisk/eslint-config/issues",
   "license": "ISC",
+  "author": "Michael Sisk <me@mgsisk.com> (https://mgsisk.com)",
   "funding": "https://github.com/mgsisk/eslint-config?sponsor=1",
-  "author": "mgsisk <me@mgsisk.com> (https://mgsisk.com)",
   "files": [
     "src/",
     "babel.js",
