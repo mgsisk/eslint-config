@@ -54,9 +54,9 @@ anyone that has found this project useful.
 [@babel/eslint-plugin]: https://www.npmjs.com/package/@babel/eslint-plugin
 [@typescript-eslint/eslint-plugin]: https://www.npmjs.com/package/@typescript-eslint/eslint-plugin
 [@typescript-eslint/parser]: https://npmjs.com/package/@typescript-eslint/parser
-[badge-build]: https://img.shields.io/github/workflow/status/mgsisk/eslint-config/build
+[badge-build]: https://img.shields.io/github/actions/workflow/status/mgsisk/eslint-config/build.yml
 [badge-coverage]: https://img.shields.io/codacy/coverage/214d41f28f1e4970974e1ea25fe6492e
-[badge-funding]: https://img.shields.io/liberapay/receives/mgsisk
+[badge-funding]: https://img.shields.io/github/sponsors/mgsisk
 [badge-quality]: https://img.shields.io/codacy/grade/214d41f28f1e4970974e1ea25fe6492e
 [badge-release]: https://img.shields.io/github/v/tag/mgsisk/eslint-config?sort=semver
 [changelog]: CHANGELOG.md
