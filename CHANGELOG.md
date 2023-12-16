@@ -4,7 +4,21 @@ Notable project changes. Versions are [semantic][].
 
 ## [Unreleased][]
 
-No unreleased changes.
+### Added
+
+- `ecmaVersion: latest` to standard config
+
+### Changed
+
+- File formatting now handled by Prettier
+- typescript config now uses `@typescript-eslint/stylistic-type-checked` and
+  `@typescript-eslint/strict-type-checked`
+
+### Removed
+
+- `env` option from standard config
+- A significant number of deprecated rules
+- WordPress ESlint configuration
 
 ## [3.0.0][] - 2021-05-07
 

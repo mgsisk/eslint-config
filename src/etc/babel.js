@@ -1,9 +1,16 @@
 module.exports = {
   rules: {
-    '@babel/new-cap': 'error',
-    '@babel/no-invalid-this': 'error',
-    '@babel/no-unused-expressions': 'error',
-    '@babel/object-curly-spacing': 'error',
-    // '@babel/semi': 'error',
+    "new-cap": "off",
+    "@babel/new-cap": "error",
+    "no-invalid-this": "off",
+    "@babel/no-invalid-this": "error",
+    "no-unused-expressions": "off",
+    "@babel/no-unused-expressions": [
+      "error",
+      {
+        allowShortCircuit: true,
+        allowTaggedTemplates: true,
+      },
+    ],
   },
-}
+};

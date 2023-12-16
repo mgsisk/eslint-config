@@ -1,18 +1,26 @@
-const {ESLint} = require('eslint')
-const tap = require('tap')
+const { ESLint } = require("eslint");
+const path = require("path");
+const tap = require("tap");
 
 /**
  * Run standard config tests.
- *
  * @returns {void}
  */
 async function test() {
-  const eslint = new ESLint({overrideConfigFile: './src/cnf/index.js', useEslintrc: false})
-  const [test1] = await eslint.lintText('const x = 1\n\nparseFloat(x)\n')
-  const [test2] = await eslint.lintText('let x = "y"')
+  const eslint = new ESLint({
+    overrideConfigFile: path.join(
+      path.dirname(__dirname),
+      "src",
+      "cnf",
+      "index.js",
+    ),
+    useEslintrc: false,
+  });
+  const [testPass] = await eslint.lintText("const x = 1\n\nparseFloat(x)\n");
+  const [testFail] = await eslint.lintText('let x = "y"');
 
-  tap.equal(test1.errorCount, 0, 'It passes valid JavaScript')
-  tap.equal(test2.errorCount, 4, 'It lints invalid JavaScript')
+  tap.equal(testPass.errorCount, 0, "It passes valid JavaScript");
+  tap.equal(testFail.errorCount, 2, "It lints invalid JavaScript");
 }
 
-test()
+test();

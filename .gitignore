@@ -1,5 +1,4 @@
-.nyc_output/
+.tap/
 .vagrant/
 /*.js
-coverage/
 node_modules/

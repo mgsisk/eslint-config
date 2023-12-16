@@ -7,23 +7,21 @@
     "eslint",
     "eslintconfig",
     "eslint-config",
-    "eslint-config-wordpress",
     "javascript",
     "lint",
     "linter",
     "linting",
-    "wordpress"
+    "typescript"
   ],
   "homepage": "https://github.com/mgsisk/eslint-config#readme",
   "bugs": "https://github.com/mgsisk/eslint-config/issues",
   "license": "ISC",
+  "author": "Michael Sisk <me@mgsisk.com> (https://mgsisk.com)",
   "funding": "https://github.com/mgsisk/eslint-config?sponsor=1",
-  "author": "mgsisk <me@mgsisk.com> (https://mgsisk.com)",
   "files": [
     "src/",
     "babel.js",
-    "typescript.js",
-    "wordpress.js"
+    "typescript.js"
   ],
   "directories": {
     "doc": "docs",
@@ -34,6 +32,7 @@
   "scripts": {
     "fix.js": "eslint --fix '**/*.js'",
     "fix.md": "remark . .github/ --ignore-pattern 'LICENSE*' -o",
+    "format": "prettier -uw .",
     "lint.js": "eslint '**/*.js'",
     "lint.json": "YAMLLINT_SCHEMA=JSON_SCHEMA yamllint '**/*.json' '**/.*.json'",
     "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
@@ -44,32 +43,27 @@
     "version": "git add --all",
     "postversion": "git push --follow-tags"
   },
-  "dependencies": {
-    "@babel/eslint-parser": "^7.13.14",
-    "@babel/eslint-plugin": "^7.13.16",
-    "@typescript-eslint/eslint-plugin": "^4.22.1",
-    "@typescript-eslint/parser": "^4.22.1",
-    "@wordpress/eslint-plugin": "^9.1.0",
-    "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^36.0.7",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-sonarjs": "^0.9.1",
-    "typescript": "^4.2.4"
-  },
   "peerDependencies": {
-		"eslint-plugin-jest": "^24.1.3",
-		"eslint-plugin-jsx-a11y": "^6.4.1",
-		"eslint-plugin-react-hooks": "^4.2.0",
-		"eslint-plugin-react": "^7.22.0",
-    "eslint": "^7.25.0"
+    "@babel/eslint-plugin": "^7.23.5",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "eslint": ">= 8",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsdoc": "^46.9.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-sonarjs": "^0.23.0"
   },
   "devDependencies": {
     "@mgsisk/remark-lint-config": "^0.5.0",
-    "@tsconfig/recommended": "^1.0.1",
-    "eslint": "7.25.0",
-    "remark-cli": "^10.0.0",
-    "tap": "^15.0.6",
-    "yaml-lint": "^1.2.4"
+    "@tsconfig/recommended": "^1.0.3",
+    "prettier": "^3.1.1",
+    "remark-cli": "^12.0.0",
+    "tap": "^18.6.1",
+    "yaml-lint": "^1.7.0"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.23.3",
+    "@typescript-eslint/parser": "^6.14.0",
+    "typescript": "^5.3.3"
   }
 }

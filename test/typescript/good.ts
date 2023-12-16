@@ -1,3 +1,3 @@
-const x = '1'
+const x = "1";
 
-parseFloat(x)
+parseFloat(x);
