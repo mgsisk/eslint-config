@@ -22,7 +22,7 @@ No unreleased changes.
 
 - `env` option from standard config
 - A significant number of deprecated rules
-- WordPress ESlint configuration
+- WordPress configuration
 
 ## [3.0.0][] - 2021-05-07
 

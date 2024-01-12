@@ -19,6 +19,8 @@ Vagrant.configure('2') do |conf|
   ].each {|pFile| conf.vm.provision 'file', source: pFile, destination: pFile if File.file?(File.expand_path pFile)}
   conf.vm.provision 'shell', inline: 'echo "options single-request-reopen" >>/etc/resolv.conf' if is_arm64
   conf.vm.provision 'shell', path: 'https://github.com/mgsisk/providence/releases/download/v0.1.6/provisioner.sh', env: {
+    'LOGIN_SHELL_CNF' => ('.zprofile' if zsh),
+    'LOGIN_SHELL' => ('/bin/zsh' if zsh),
     'ZONE' => ENV['ZONE'],
   }.compact
 
